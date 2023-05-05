@@ -16,7 +16,7 @@ function Home() {
         <>
             <SmoothScroll>
                 <HeadingWrapper className="flex m-auto">
-                    <div className="justify-center mx-8 xl:mx-10 xl:px-10 intro heading__intro">
+                    <div className="justify-center m-10 xl:mx-14 xl:px-10 md:mx-14 lg:mx-14 intro heading__intro">
                         <div className="relative align-middle head__title">
                             <h1 className="flex justify-center m-auto align-middle title__intro">
                                 Hi, Gilang Here.

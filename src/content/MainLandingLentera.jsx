@@ -50,9 +50,6 @@ const MainLandingLentera = () => {
         color: #656565;
     `;
 
-    const ButtonCta = styled.div`
-        display: block;
-    `;
     return (
         <>
             <div className="relative heading__content__landing">
@@ -80,7 +77,7 @@ const MainLandingLentera = () => {
                                     <span className="relative block w-80 ">
                                         <Link
                                             to={"/lentera-fajar"}
-                                            className="relative p-4 mt-10 overflow-hidden xl:px-20 link__cta lg:px-20 2xl:px-20 w-80"
+                                            className="relative p-4 mt-10 overflow-hidden text-center lg:w-80 xl:px-20 link__cta lg:px-20 2xl:px-20 xl:w-80 w-60"
                                         >
                                             Read The Case Study
                                         </Link>

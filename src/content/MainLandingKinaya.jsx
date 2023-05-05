@@ -54,13 +54,10 @@ const MainLandingKinaya = () => {
         color: #656565;
     `;
 
-    const ButtonCta = styled.div`
-        display: block;
-    `;
     return (
         <>
             <div className="relative heading__content__landing">
-                <Link to="/kinaya">
+                <Link to={"/kinaya"}>
                     <ContentStag className="overflow-hidden rounded-xl content__wrapper__heading">
                         <div className="relative flex flex-col-reverse md:flex-row xl:flex-row content__header">
                             <div className="relative px-6 py-6 align-middle md:py-0 md:px-0 md:m-10 xl:m-10 content__item">
@@ -85,7 +82,7 @@ const MainLandingKinaya = () => {
                                     <span className="relative block w-80 ">
                                         <Link
                                             to={"/kinaya"}
-                                            className="relative p-4 mt-10 overflow-hidden xl:px-20 link__cta lg:px-20 2xl:px-20 w-80"
+                                            className="relative p-4 mt-10 overflow-hidden text-center xl:px-20 lg:w-80 link__cta lg:px-20 2xl:px-20 xl:w-80 w-60"
                                         >
                                             Read The Case Study
                                         </Link>

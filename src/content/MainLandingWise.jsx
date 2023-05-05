@@ -6,54 +6,49 @@ import { useNavigate } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Link } from "react-router-dom";
 
-const ContentStag = styled.div`
-    background: rgb(234, 240, 251);
-    background: -moz-linear-gradient(
-        54deg,
-        rgba(234, 240, 251, 1) 0%,
-        rgba(236, 239, 241, 1) 50%
-    );
-    background: -webkit-linear-gradient(
-        54deg,
-        rgba(234, 240, 251, 1) 0%,
-        rgba(236, 239, 241, 1) 50%
-    );
-    background: linear-gradient(
-        54deg,
-        rgba(234, 240, 251, 1) 0%,
-        rgba(236, 239, 241, 1) 50%
-    );
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#eaf0fb",endColorstr="#eceff1",GradientType=1);
-    // max-width: 1024px;
-    margin: auto;
-`;
-
-const IconContents = styled.span`
-    display: flex;
-    // font-size: 2em;
-    background-color: #132a1f;
-    border-radius: 10px;
-    // padding: 2rem;
-    // height: 20px;
-    // width: 20px;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-`;
-
-const ContentPress = styled.div`
-    display: flex;
-    flex-direction: row;
-    gap: 35px;
-    color: #656565;
-`;
-
-const ButtonCta = styled.div`
-    display: block;
-`;
-
 const MainLandingWise = () => {
     const navigate = useNavigate();
+    const ContentStag = styled.div`
+        background: rgb(234, 240, 251);
+        background: -moz-linear-gradient(
+            54deg,
+            rgba(234, 240, 251, 1) 0%,
+            rgba(236, 239, 241, 1) 50%
+        );
+        background: -webkit-linear-gradient(
+            54deg,
+            rgba(234, 240, 251, 1) 0%,
+            rgba(236, 239, 241, 1) 50%
+        );
+        background: linear-gradient(
+            54deg,
+            rgba(234, 240, 251, 1) 0%,
+            rgba(236, 239, 241, 1) 50%
+        );
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#eaf0fb",endColorstr="#eceff1",GradientType=1);
+        // max-width: 1024px;
+        margin: auto;
+    `;
+
+    const IconContents = styled.span`
+        display: flex;
+        // font-size: 2em;
+        background-color: #132a1f;
+        border-radius: 10px;
+        // padding: 2rem;
+        // height: 20px;
+        // width: 20px;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    `;
+
+    const ContentPress = styled.div`
+        display: flex;
+        flex-direction: row;
+        gap: 35px;
+        color: #656565;
+    `;
     return (
         <>
             <div className="relative heading__content__landing">
@@ -81,7 +76,7 @@ const MainLandingWise = () => {
                                     <span className="relative block w-80 ">
                                         <Link
                                             to={"/wise-commerce"}
-                                            className="relative p-4 mt-10 overflow-hidden xl:px-20 link__cta lg:px-20 2xl:px-20 w-80"
+                                            className="relative p-4 mt-10 overflow-hidden text-center xl:w-80 lg:w-80 w-60 xl:px-20 link__cta lg:px-20 2xl:px-20"
                                         >
                                             Read The Case Study
                                         </Link>

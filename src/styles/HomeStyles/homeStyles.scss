@@ -48,8 +48,33 @@ $fontMediumUpper: 5.8em;
     }
 }
 
-@media (320px <=width <=480px) {
+
+
+@media (0px <=width <=320px) {
     .heading__intro {
+        max-width: 300px;
+
+        .head__title {
+            .title__intro {
+                text-align: center;
+                font-size: $fontSmall;
+            }
+
+            .base__on-location {
+                font-size: $fontThin;
+            }
+
+            .work {
+                font-size: $fontThin;
+            }
+        }
+    }
+}
+
+@media (321px <=width <=480px) {
+    .heading__intro {
+        max-width: 300px;
+
         .head__title {
             .title__intro {
                 text-align: center;
@@ -69,6 +94,8 @@ $fontMediumUpper: 5.8em;
 
 @media (481px <=width <=767px) {
     .heading__intro {
+        // max-width: 400px;
+
         .head__title {
             .title__intro {
                 text-align: center;

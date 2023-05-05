@@ -15,6 +15,33 @@ function Footer() {
         justify-content: center;
         item-align: center;
         padding: 2rem 0 2rem;
+
+        @media (2px <= width <=319px) {
+            padding: 0 2em;
+            font-size: 0.9em;
+        }
+
+        @media (320px <= width <=480px) {
+            padding: 0 2em;
+            font-size: 0.9em;
+        }
+        @media (481px <= width <=768px) {
+            padding: 0 2em;
+            font-size: 1em;
+        }
+        @media (769px <= width <=1023px) {
+            padding: 0 2em;
+            font-size: 1em;
+        }
+        @media (1024px <= width <=1200px) {
+            font-size: 1em;
+            max-width: 900px;
+        }
+
+        @media (1201px <= width) {
+            font-size: 1em;
+            max-width: 1000px;
+        }
     `;
 
     const today = new Date();

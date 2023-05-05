@@ -1,8 +1,406 @@
+// $-navBackground: black;
+$logoBackdropBackground: rgba(168, 167, 167, 0.185);
+$fontFamilyNavbar: 'Space Grotesk',
+sans-serif;
+
 .nav {
-    background-color: var(---navBackground);
+    // background-color: $-navBackground;
+    // padding: 1em;
     // position: fixed;
     // margin: 2rem 3rem;
     width: 100%;
     z-index: 2;
-    color: black;
+    color: white;
+    font-family: $fontFamilyNavbar;
+    // background-color: tomato;
+
+    .nav__item {
+
+        margin: 0 auto;
+        overflow: hidden;
+
+        .nav__logo {
+            position: relative;
+
+            .overlay__me {
+                width: 100%;
+
+                .over__line {
+                    max-width: 130px;
+                    position: absolute;
+                    z-index: 5;
+                    color: black;
+                    // background-color: tomato;
+                    white-space: nowrap;
+                    transform: translate(-60%);
+                    -webkit-transition: all 1s cubic-bezier(0.99, 0.29, 0.08, 0.88);
+                    transition: all 1s cubic-bezier(0.99, 0.29, 0.08, 0.88);
+                    opacity: 0;
+
+                    justify-content: center;
+
+                    &:hover {
+                        opacity: 1;
+                        transform: translate(0%);
+                        transform: rotate(-9deg);
+                    }
+
+                    .hellow__its__me {
+
+                        pointer-events: none;
+                        font-weight: 600;
+                        align-items: center;
+                        margin: auto;
+                        display: flex;
+                        transform: translate(30px);
+                        overflow: hidden;
+                        margin-left: 32px;
+                        animation: bounce;
+                        animation-duration: 2s infinite;
+                    }
+                }
+
+            }
+
+            .logo {
+                position: relative;
+                pointer-events: none;
+
+                img {
+                    width: 6em;
+                    height: 3em;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    object-fit: cover;
+                    z-index: 6;
+                    position: relative;
+                    content: "keeping smile";
+                    filter: contrast(100%);
+                }
+
+                &:before {
+                    content: "";
+                    background: $logoBackdropBackground;
+                    z-index: 4;
+                    position: absolute;
+                    margin: 0 auto;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+                    bottom: 0;
+                    backdrop-filter: blur(12px);
+                    filter: grayscale(30%) invert(12%);
+
+                }
+            }
+
+        }
+
+        .nav__link {
+            font-size: 0.9em;
+
+            .nav__link__item {
+                border-radius: 50px;
+                background-color: rgba(211, 211, 211, 0.5);
+                color: #161515;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+@media (320px<=width <=480px) {
+    .nav {
+        padding: 1em;
+
+        .nav__item {
+
+            margin: 0 auto;
+            overflow: hidden;
+
+            .nav__logo {
+                position: relative;
+
+                .overlay__me {
+                    width: 100%;
+
+                    .over__line {
+                        .hellow__its__me {
+                            font-weight: 600;
+                            padding: 0 1.6em;
+                            display: none;
+                        }
+                    }
+
+                }
+
+                .logo {
+
+                    img {
+                        width: 68px;
+                        height: 35px;
+                        content: "keeping smile";
+                    }
+
+                    &:before {
+                        content: "";
+                        height: 3.2em;
+                        width: 3.2em;
+                        left: -8px;
+                        top: -8px;
+                        bottom: 0;
+                    }
+                }
+            }
+
+            .nav__link {
+                font-size: 0.8em;
+
+                .nav__link__item {
+                    padding: 1em 1em;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (481px<=width <=768px) {
+    .nav {
+        padding: 1em;
+
+        .nav__item {
+
+            margin: 0 auto;
+            overflow: hidden;
+
+            .nav__logo {
+                position: relative;
+
+                .overlay__me {
+                    width: 100%;
+
+                    .over__line {
+                        .hellow__its__me {
+                            font-weight: 600;
+                            padding: 0 1.6em;
+                            display: none;
+                        }
+                    }
+
+                }
+
+                .logo {
+                    pointer-events: none;
+                    width: 100%;
+
+                    img {
+                        width: 80px;
+                        height: 40px;
+                        content: "keeping smile";
+                    }
+
+                    &:before {
+                        content: "";
+                        height: 3.6em;
+                        width: 3.6em;
+                        left: -10px;
+                        top: -10px;
+                        bottom: 0;
+                    }
+                }
+            }
+
+            .nav__link {
+                font-size: 0.8em;
+
+                .nav__link__item {
+                    padding: 1em 1em;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
+@media (769px<=width <=1023px) {
+    .nav {
+        padding: 1.2em;
+
+        .nav__item {
+
+            margin: 0 auto;
+            overflow: hidden;
+
+            .nav__logo {
+                position: relative;
+
+                .overlay__me {
+                    width: 100%;
+
+                    .over__line {
+                        top: -40px;
+                        width: 22%;
+                        left: -76.2px;
+
+                        .hellow__its__me {
+                            font-weight: 600;
+                            padding: 0 1.6em;
+                        }
+                    }
+
+                }
+
+                .logo {
+                    width: 100%;
+                    pointer-events: none;
+
+                    img {
+                        width: 90px;
+                        height: 50px;
+                        content: "keeping smile";
+                    }
+
+                    &:before {
+                        content: "";
+                        height: 4em;
+                        width: 4em;
+                        left: -9px;
+                        top: -9px;
+                    }
+                }
+            }
+
+            .nav__link {
+                font-size: 0.9em;
+
+                .nav__link__item {
+                    padding: 1.1em 1.3em;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
+@media (1024px<=width <=1200px) {
+    .nav {
+        padding: 1.2em;
+
+        .nav__item {
+            max-width: 900px;
+            margin: 0 auto;
+            overflow: hidden;
+
+            .nav__logo {
+                position: relative;
+
+                .overlay__me {
+                    width: 100%;
+
+                    .over__line {
+                        top: -40px;
+                        width: 22%;
+                        left: -76.2px;
+
+                        .hellow__its__me {
+                            font-weight: 600;
+                            padding: 0 1.6em;
+                        }
+                    }
+                }
+
+                .logo {
+                    width: 100%;
+                    pointer-events: none;
+
+                    img {
+                        width: 90px;
+                        height: 50px;
+                        content: "keeping smile";
+                    }
+
+                    &:before {
+                        content: "";
+                        height: 4em;
+                        width: 4em;
+                        left: -9px;
+                        top: -9px;
+                    }
+                }
+            }
+
+            .nav__link {
+                font-size: 0.9em;
+
+                .nav__link__item {
+                    padding: 1.1em 1.3em;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
+@media (1201px<=width) {
+    .nav {
+        padding: 1.2em;
+
+        .nav__item {
+            max-width: 1210px;
+            margin: 0 auto;
+            overflow: hidden;
+
+            .nav__logo {
+                position: relative;
+                width: 100%;
+
+                .overlay__me {
+                    width: 100%;
+
+                    .over__line {
+                        top: -40px;
+                        width: 22%;
+                        left: -76.2px;
+                        height: 76px;
+
+                        .hellow__its__me {
+                            font-weight: 600;
+                            padding: 0 1.3em;
+                        }
+                    }
+                }
+
+                .logo {
+
+                    img {
+                        width: 60px;
+                        height: 60px;
+                        content: "keeping smile";
+                        object-fit: cover;
+                        background-repeat: no-repeat;
+                    }
+
+                    &:before {
+                        content: "";
+                        height: 5em;
+                        width: 5em;
+                        left: -10px;
+                        top: -12px;
+                    }
+                }
+            }
+
+            .nav__link {
+                font-size: 0.9em;
+
+                .nav__link__item {
+                    padding: 1.1em 1.3em;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
 }
