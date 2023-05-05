@@ -3,7 +3,7 @@ import styled from "styled-components";
 import "../styles/NavbarStyles/navbarStyles.scss";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import MyFace from "../assets/img/MyFace.png";
-import { Link } from "react-router-dom";
+import AboutPages from "../pages/AboutPages";
 
 const NavbarNav = styled.div`
     overflow: hidden;
@@ -36,11 +36,15 @@ const Navbar = () => {
                         </div>
                         <div className="nav__link ">
                             <div className="flex flex-row gap-3 xl:gap-4 nav__link__item text-gray-950 backdrop-blur-md">
-                                {/* <Link to={"/"} className="relative">
-                                    Home
-                                </Link> */}
-                                <a href="/">Home</a>
-                                <a href="/about">About</a>
+                                <span className="relative block gap-3">
+                                    <a href={"/"}>Home</a>
+                                </span>
+                                <span className="relative block gap-3">
+                                    <a href={"/about"}>About</a>
+                                </span>
+                                <span className="relative block gap-3">
+                                    <a href={"#"}>Work</a>
+                                </span>
                             </div>
                         </div>
                     </div>
