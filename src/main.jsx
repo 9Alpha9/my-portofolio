@@ -12,11 +12,9 @@ import Navbar from "./components/Navbar.jsx";
 
 ReactDOM.createRoot(document.getElementById("classModules-nVrme9")).render(
     <React.StrictMode>
-        <div className="rectection__pages">
-            {/* <App /> */}
-            <Navbar />
-        </div>
+        <div className="rectection__pages">{/* <App /> */}</div>
         <BrowserRouter>
+            <Navbar />
             <Routes>
                 <Route path="/" element={<MainRoutes />}></Route>
                 <Route path="/about" element={<AboutPages />}></Route>
