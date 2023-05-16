@@ -32,6 +32,11 @@ const AboutPages = () => {
         padding: 2rem 0;
     `;
 
+    const MarqueeWrapper = styled.div`
+        position: relative;
+        display: block;
+    `;
+
     return (
         <>
             <SmoothScroll>
@@ -48,22 +53,24 @@ const AboutPages = () => {
                             <figure className="about__meFigure">
                                 <LazyLoadImage src={ThisMe} />
                             </figure>
-                            <MarqueeContainer id="smooth-wrapper">
-                                <div className="marquee__headText ">
-                                    <Marquee>
-                                        <p className="marquee__text">
-                                            <ul className="flex flex-row">
-                                                <li>Let&apos;s Talk</li>
-                                                <li>UI/UX</li>
-                                                <li>React Js</li>
-                                                <li>Sass</li>
-                                                <li>Css</li>
-                                                <li>Figma</li>
-                                            </ul>
-                                        </p>
-                                    </Marquee>
-                                </div>
-                            </MarqueeContainer>
+                            <MarqueeWrapper>
+                                <MarqueeContainer id="smooth-wrapper">
+                                    <div className="marquee__headText ">
+                                        <Marquee>
+                                            <p className="marquee__text">
+                                                <ul className="flex flex-row">
+                                                    <li>Let&apos;s Talk</li>
+                                                    <li>UI/UX</li>
+                                                    <li>React Js</li>
+                                                    <li>Sass</li>
+                                                    <li>Css</li>
+                                                    <li>Figma</li>
+                                                </ul>
+                                            </p>
+                                        </Marquee>
+                                    </div>
+                                </MarqueeContainer>
+                            </MarqueeWrapper>
                             <AboutContentItem>
                                 <div className="content">
                                     <ThisContentAbout />
