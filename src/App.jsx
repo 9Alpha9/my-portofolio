@@ -6,13 +6,7 @@ import Navbar from "./components/Navbar";
 const HandleComponent = styled.div``;
 
 function App() {
-    return (
-        <>
-            <HandleComponent className="xRcMp">
-                <Navbar />
-            </HandleComponent>
-        </>
-    );
+    return <></>;
 }
 
 export default App;

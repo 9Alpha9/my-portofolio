@@ -40,31 +40,16 @@ const Navbar = () => {
                                 <span className="relative block gap-3">
                                     <ul className="flex flex-row gap-4 nav__link__wrapper">
                                         <li className="nav__links__items">
-                                            <a className="nav__links" href="/">
-                                                Home
-                                            </a>
+                                            <Link to={"/"}>Home</Link>
                                         </li>
                                         <li className="nav__links__items">
-                                            <a
-                                                className="nav__links"
-                                                href="/about"
-                                            >
-                                                About
-                                            </a>
+                                            <Link to={"/about"}>About</Link>
                                         </li>
                                         <li className="nav__links__items">
-                                            <a className="nav__links" href="#">
-                                                Works
-                                            </a>
+                                            <Link to={"#"}>works</Link>
                                         </li>
                                     </ul>
                                 </span>
-                                {/* <span className="relative block gap-3">
-                                    <Link to={"/about"}>About</Link>
-                                </span>
-                                <span className="relative block gap-3">
-                                    <Link to={"#"}>Work</Link>
-                                </span> */}
                             </div>
                         </div>
                     </div>
