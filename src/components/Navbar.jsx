@@ -20,7 +20,7 @@ const Navbar = () => {
             <NavbarNav>
                 <div className="nav">
                     <div className="flex flex-row items-center justify-between px-4 py-8 align-middle nav__item">
-                        <div className="flex items-center gap-3 xl:ml-16 nav__logo">
+                        <div className="flex items-center gap-3 nav__logo">
                             <figure className="logo ">
                                 <LazyLoadImage
                                     src={MyFace}

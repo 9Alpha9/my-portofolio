@@ -6,6 +6,8 @@ import { gsap } from "gsap";
 import Marquee from "react-gsap-marquee";
 import SmoothScroll from "../SmoothScroll";
 import Footer from "../components/Footer";
+import ThisMe from "../assets/img/ThisMe.png";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 import ThisContentAbout from "../content/AboutContent/ThisContentAbout";
 
@@ -16,7 +18,6 @@ const AboutPages = () => {
             margin: auto;
             align-items: center;
             display: block;
-            color: #161515;
         }
     `;
 
@@ -44,6 +45,9 @@ const AboutPages = () => {
                                     </h1>
                                 </div>
                             </SmoothScroll>
+                            <figure className="about__meFigure">
+                                <LazyLoadImage src={ThisMe} />
+                            </figure>
                             <MarqueeContainer id="smooth-wrapper">
                                 <div className="marquee__headText ">
                                     <Marquee>
@@ -68,8 +72,8 @@ const AboutPages = () => {
                         </div>
                     </AboutContent>
                 </AboutWrapperContainer>
+                <Footer />
             </SmoothScroll>
-            <Footer />
         </>
     );
 };
