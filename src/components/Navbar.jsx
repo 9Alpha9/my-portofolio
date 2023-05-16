@@ -38,14 +38,33 @@ const Navbar = () => {
                         <div className="nav__link ">
                             <div className="flex flex-row gap-3 xl:gap-4 nav__link__item text-gray-950 backdrop-blur-md">
                                 <span className="relative block gap-3">
-                                    <Link to={"/"}>Home</Link>
+                                    <ul className="flex flex-row gap-4 nav__link__wrapper">
+                                        <li className="nav__links__items">
+                                            <a className="nav__links" href="/">
+                                                Home
+                                            </a>
+                                        </li>
+                                        <li className="nav__links__items">
+                                            <a
+                                                className="nav__links"
+                                                href="/about"
+                                            >
+                                                About
+                                            </a>
+                                        </li>
+                                        <li className="nav__links__items">
+                                            <a className="nav__links" href="#">
+                                                Works
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </span>
-                                <span className="relative block gap-3">
+                                {/* <span className="relative block gap-3">
                                     <Link to={"/about"}>About</Link>
                                 </span>
                                 <span className="relative block gap-3">
                                     <Link to={"#"}>Work</Link>
-                                </span>
+                                </span> */}
                             </div>
                         </div>
                     </div>
