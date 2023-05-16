@@ -5,7 +5,7 @@ import MainLandingWise from "./MainLandingWise";
 import "../styles/mainContent.scss";
 import MainLandingKinaya from "./MainLandingKinaya";
 import MainLandingLentera from "./MainLandingLentera";
-
+import { Analytics } from "@vercel/analytics/react";
 const MainContent = () => {
     return (
         <>
@@ -13,6 +13,7 @@ const MainContent = () => {
                 <MainLandingWise />
                 <MainLandingLentera />
                 <MainLandingKinaya />
+                <Analytics />
             </div>
         </>
     );
