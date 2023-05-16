@@ -7,7 +7,6 @@ import MainLandingKinaya from "./MainLandingKinaya";
 import MainLandingLentera from "./MainLandingLentera";
 
 import ReactGA from "react-ga";
-import RouteChangeTracker from "../RouteChangeTracker";
 
 const MainContent = () => {
     useEffect(() => {
@@ -24,7 +23,6 @@ const MainContent = () => {
                 <MainLandingWise />
                 <MainLandingLentera />
                 <MainLandingKinaya />
-                <RouteChangeTracker />
             </div>
         </>
     );
