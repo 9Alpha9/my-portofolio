@@ -3,7 +3,7 @@
 
 ## Intro
 
-Hi. I'm a freelances web developers and UI/UX designer. I'm interest for web developers and helping a company and small business for grow up via website. This projects make from Create-React-App (React.JS & Vite), Styled-Component, Sass, and Gsap.
+Hi. I'm a freelances web developers and UI/UX designer. I'm interest for web developers and helping a company and small business for grow up via website. This projects made from Create-React-App (React.JS & Vite), Styled-Component, Sass, and Gsap.
 
 ## Installation
 Install my-portfolio projects with npm
