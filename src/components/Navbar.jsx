@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import styled from "styled-components";
-import "../styles/NavbarStyles/navbarStyles.scss";
+import "../styles/navbarStyles.scss";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import MyFace from "../assets/img/MyFace.png";
 import AboutPages from "../pages/AboutPages";
@@ -46,7 +46,7 @@ const Navbar = () => {
                                             <Link to={"/about"}>About</Link>
                                         </li>
                                         <li className="nav__links__items">
-                                            <Link to={"#"}>works</Link>
+                                            <Link to={"#"}>Works</Link>
                                         </li>
                                     </ul>
                                 </span>

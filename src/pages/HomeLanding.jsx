@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React, { useRef, useEffect } from "react";
-import "../styles/HomeStyles/homeStyles.scss";
+import "../styles/homeStyles.scss";
 import ContentControl from "../content/ContentControl";
 import styled from "styled-components";
 import SmoothScroll from "../SmoothScroll";

@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import styled from "styled-components";
-import "../styles/FootesStyles/footerStyles.scss";
+import "../styles/footerStyles.scss";
 
 function Footer() {
     const FooterWrapperContainer = styled.div`
@@ -40,7 +40,7 @@ function Footer() {
 
         @media (1201px <= width) {
             font-size: 1em;
-            max-width: 1000px;
+            max-width: 1201px;
         }
     `;
 

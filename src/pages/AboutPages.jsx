@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-import "../styles/AboutStyles/aboutStyles.scss";
+import "../styles/aboutStyles.scss";
 import styled from "styled-components";
 import { gsap } from "gsap";
 import Marquee from "react-gsap-marquee";
@@ -8,8 +8,9 @@ import SmoothScroll from "../SmoothScroll";
 import Footer from "../components/Footer";
 import ThisMe from "../assets/img/ThisMe.png";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { motion } from "framer-motion";
 
-import ThisContentAbout from "../content/AboutContent/ThisContentAbout";
+import AboutArticleitems from "../content/aboutArticle/AboutArticleitems";
 
 const AboutPages = () => {
     const AboutWrapperContainer = styled.div`
@@ -35,6 +36,7 @@ const AboutPages = () => {
     const MarqueeWrapper = styled.div`
         position: relative;
         display: block;
+        overflow: hidden;
     `;
 
     return (
@@ -54,8 +56,11 @@ const AboutPages = () => {
                                 <LazyLoadImage src={ThisMe} />
                             </figure>
                             <MarqueeWrapper>
-                                <MarqueeContainer id="smooth-wrapper">
-                                    <div className="marquee__headText ">
+                                <MarqueeContainer
+                                    id="smooth-wrapper"
+                                    className="marquee__listItem"
+                                >
+                                    <div className="marquee__headText">
                                         <Marquee>
                                             <p className="marquee__text">
                                                 <ul className="flex flex-row">
@@ -72,8 +77,8 @@ const AboutPages = () => {
                                 </MarqueeContainer>
                             </MarqueeWrapper>
                             <AboutContentItem>
-                                <div className="content">
-                                    <ThisContentAbout />
+                                <div className="relative content">
+                                    <AboutArticleitems />
                                 </div>
                             </AboutContentItem>
                         </div>
