@@ -5,7 +5,12 @@ import styled from "styled-components";
 import "../../styles/aboutStyles.scss";
 import CVPortofolio from "../../assets/CV/Gilang_Alfi_Syahri_Ramadhan_Resume-UI_UX Designer.pdf";
 import { Link } from "react-router-dom";
-import { FaDownload } from "react-icons/fa6";
+import {
+    FaDownload,
+    FaLinkedin,
+    FaSquareBehance,
+    FaSquareGithub,
+} from "react-icons/fa6";
 import { motion, useAnimation, easeInOut } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
@@ -78,6 +83,7 @@ const AboutArticleitems = () => {
         color: #ffffff;
         &:hover {
             background-color: #313131;
+            border-radius: 12px;
         }
     `;
 
@@ -86,6 +92,16 @@ const AboutArticleitems = () => {
         color: #ffffff;
         &:hover {
             background-color: #005494;
+            border-radius: 12px;
+        }
+    `;
+
+    const BehanceMoverel__ = styled.div`
+        background-color: #0057ff;
+        color: #ffffff;
+        &:hover {
+            background-color: rgb(6 74 204);
+            border-radius: 12px;
         }
     `;
 
@@ -100,7 +116,8 @@ const AboutArticleitems = () => {
                 <ArticleWrapper>
                     <MoveLink className="relSocial__move">
                         <Link to="https://github.com/9Alpha9" target="_blank">
-                            <GithubMoverel__ className="p-3 px-10 text-center eas-in-out delay-150 duration-300 github__moveRel">
+                            <GithubMoverel__ className="flex items-center gap-3 p-3 px-10 text-center duration-300 delay-150 eas-in-out github__moveRel">
+                                <FaSquareGithub className="text-lg xl:text-2xl" />{" "}
                                 Github
                             </GithubMoverel__>
                         </Link>
@@ -108,9 +125,19 @@ const AboutArticleitems = () => {
                             to="https://www.linkedin.com/in/gilang-ramaddhann/"
                             target="_blank"
                         >
-                            <LinkedinMoverel__ className="p-3 px-10 text-center eas-in-out delay-150 duration-300 linkedin__moreRel">
+                            <LinkedinMoverel__ className="flex items-center gap-3 p-3 px-10 text-center duration-300 delay-150 eas-in-out linkedin__moreRel">
+                                <FaLinkedin className="text-lg xl:text-2xl" />{" "}
                                 Linkedin
                             </LinkedinMoverel__>
+                        </Link>
+                        <Link
+                            to="https://www.behance.net/gilangalfii"
+                            target="_blank"
+                        >
+                            <BehanceMoverel__ className="flex items-center gap-3 p-3 px-10 text-center duration-300 delay-150 eas-in-out behance__moreRel">
+                                <FaSquareBehance className="text-lg xl:text-2xl" />{" "}
+                                Behance
+                            </BehanceMoverel__>
                         </Link>
                     </MoveLink>
                     <ArticleAboutinfo>
@@ -129,16 +156,16 @@ const AboutArticleitems = () => {
                             access web pages by redesigning or creating UI.
                             Apart from that, I also back-end developers.
                             <DownloadPorto className="my-10">
-                                <div className="cvLink__download ">
+                                <div className="flex cvLink__download ">
                                     <Link
-                                        className="bg-slate-400 py-3 px-6 hover:bg-slate-600 text-white flex gap-3 items-center w-52 eas-in-out delay-150 duration-300"
+                                        className="flex items-center gap-3 px-6 py-3 text-white duration-300 delay-150 bg-slate-400 hover:bg-slate-600 w-82 eas-in-out"
                                         to={CVPortofolio}
                                         download="Gilang_Alfi_Syahri_Ramadhan_Resume-UI_UX Designer"
                                         target="_blank"
                                         rel="noreferrer"
                                     >
                                         <FaDownload className="text-2xl" />
-                                        Download CV
+                                        Download My Resume
                                     </Link>
                                 </div>
                             </DownloadPorto>
