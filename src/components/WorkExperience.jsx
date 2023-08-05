@@ -45,7 +45,7 @@ function WorkExperience() {
                     Works Of Experience
                 </span>
                 <div className="col-span-1 work__container">
-                    <section className="relative grid grid-cols-2 gap-3 my-5 xl:grid-cols-3 md:grid-cols-3 work__ExperienceList">
+                    <section className="relative grid grid-cols-1 gap-3 my-5 xl:grid-cols-3 md:grid-cols-3 work__ExperienceList">
                         {experience.map((experience) => (
                             <>
                                 <div className="relative flex flex-col justify-between p-3 overflow-hidden transition-all duration-200 border rounded-md shadow-md shadow-gray-200 work__ExperiencsItems border-slate-300 h-80">
