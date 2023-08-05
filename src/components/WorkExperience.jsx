@@ -59,7 +59,7 @@ function WorkExperience() {
                                         <span className="block text-sm">
                                             {experience.date}
                                         </span>
-                                        <h2 className="leading-6 w-[11rem] xl:w-[14rem] md:w-[11rem] xl:text-md py-2">
+                                        <h2 className="py-2 leading-6 xl:text-md">
                                             {experience.title}
                                         </h2>
                                     </div>
