@@ -19,6 +19,10 @@ const AboutPages = () => {
             margin: auto;
             align-items: center;
             display: block;
+            padding: 2rem;
+        }
+        @media (481px width <= 768px) {
+            padding: 2rem;
         }
     `;
 
@@ -70,6 +74,7 @@ const AboutPages = () => {
                                                     <li>Sass</li>
                                                     <li>Css</li>
                                                     <li>Figma</li>
+                                                    <li>Tailwind Css</li>
                                                 </ul>
                                             </p>
                                         </Marquee>

@@ -81,16 +81,6 @@ const MainLandingWise = () => {
                                             Read The Case Study
                                         </Link>
                                     </span>
-                                    {/* <ButtonCta className="relative mt-10">
-                                    <button
-                                        className="relative p-4 overflow-hidden xl:px-20 button__cta lg:px-20 2xl:px-20 "
-                                        onClick={() =>
-                                            navigate("/wise-commerce")
-                                        }
-                                    >
-                                        Read The Case Study
-                                    </button>
-                                </ButtonCta> */}
                                 </div>
                             </div>
                             <div className="relative flex-1 flex-shrink-0 content__figure">

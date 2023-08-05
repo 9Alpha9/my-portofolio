@@ -59,7 +59,6 @@ const AboutArticleitems = () => {
     `;
 
     const MoveLink = styled.div`
-        position: relative;
         display: flex;
         flex-wrap: wrap;
         gap: 10px;
@@ -114,32 +113,39 @@ const AboutArticleitems = () => {
         <>
             <div className="p-4 md:p-0 lg:p-0 xl:p-0">
                 <ArticleWrapper>
-                    <MoveLink className="relSocial__move">
-                        <Link to="https://github.com/9Alpha9" target="_blank">
-                            <GithubMoverel__ className="flex items-center gap-3 p-3 px-10 text-center duration-300 delay-150 eas-in-out github__moveRel">
-                                <FaSquareGithub className="text-lg xl:text-2xl" />{" "}
-                                Github
-                            </GithubMoverel__>
-                        </Link>
-                        <Link
-                            to="https://www.linkedin.com/in/gilang-ramaddhann/"
-                            target="_blank"
-                        >
-                            <LinkedinMoverel__ className="flex items-center gap-3 p-3 px-10 text-center duration-300 delay-150 eas-in-out linkedin__moreRel">
-                                <FaLinkedin className="text-lg xl:text-2xl" />{" "}
-                                Linkedin
-                            </LinkedinMoverel__>
-                        </Link>
-                        <Link
-                            to="https://www.behance.net/gilangalfii"
-                            target="_blank"
-                        >
-                            <BehanceMoverel__ className="flex items-center gap-3 p-3 px-10 text-center duration-300 delay-150 eas-in-out behance__moreRel">
-                                <FaSquareBehance className="text-lg xl:text-2xl" />{" "}
-                                Behance
-                            </BehanceMoverel__>
-                        </Link>
-                    </MoveLink>
+                    <div className="socialContainer">
+                        <div className="social__list">
+                            <MoveLink className="relSocial__move">
+                                <Link
+                                    to="https://github.com/9Alpha9"
+                                    target="_blank"
+                                >
+                                    <GithubMoverel__ className="flex items-center gap-3 p-3 px-10 text-center duration-300 delay-150 eas-in-out github__moveRel">
+                                        <FaSquareGithub className="text-lg xl:text-2xl" />{" "}
+                                        Github
+                                    </GithubMoverel__>
+                                </Link>
+                                <Link
+                                    to="https://www.linkedin.com/in/gilang-ramaddhann/"
+                                    target="_blank"
+                                >
+                                    <LinkedinMoverel__ className="flex items-center gap-3 p-3 px-10 text-center duration-300 delay-150 eas-in-out linkedin__moreRel">
+                                        <FaLinkedin className="text-lg xl:text-2xl" />{" "}
+                                        Linkedin
+                                    </LinkedinMoverel__>
+                                </Link>
+                                <Link
+                                    to="https://www.behance.net/gilangalfii"
+                                    target="_blank"
+                                >
+                                    <BehanceMoverel__ className="flex items-center gap-3 p-3 px-10 text-center duration-300 delay-150 eas-in-out behance__moreRel">
+                                        <FaSquareBehance className="text-lg xl:text-2xl" />{" "}
+                                        Behance
+                                    </BehanceMoverel__>
+                                </Link>
+                            </MoveLink>
+                        </div>
+                    </div>
                     <ArticleAboutinfo>
                         <ArticleHeading>
                             <h2>Hello Frontend Lovers,</h2>
@@ -169,10 +175,10 @@ const AboutArticleitems = () => {
                                     </Link>
                                 </div>
                             </DownloadPorto>
-                            {/* <WorkExperience />
+                            <WorkExperience />
                             <Skills />
-                            <Education /> */}
-                            <p>Hold on, it's not stop in here❤️. Update Soon</p>
+                            {/* <Education /> */}
+                            {/* <p>Hold on, it's not stop in here❤️. Update Soon</p> */}
                         </ArticleContent>
                     </ArticleAboutinfo>
                 </ArticleWrapper>

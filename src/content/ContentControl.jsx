@@ -6,17 +6,17 @@ import "../styles/mainContent.scss";
 import MainLandingKinaya from "./MainLandingKinaya";
 import MainLandingLentera from "./MainLandingLentera";
 
-import ReactGA from "react-ga";
+// import ReactGA from "react-ga";
 
 const MainContent = () => {
-    useEffect(() => {
-        ReactGA.pageview(window.location.pathname + window.location.search);
-    }, []);
+    // useEffect(() => {
+    //     ReactGA.pageview(window.location.pathname + window.location.search);
+    // }, []);
 
-    ReactGA.exception({
-        description: "An error ocurred",
-        fatal: true,
-    });
+    // ReactGA.exception({
+    //     description: "An error ocurred",
+    //     fatal: true,
+    // });
     return (
         <>
             <div className="flex flex-col gap-10 py-32 wrapper__content">

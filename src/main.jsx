@@ -10,9 +10,21 @@ import LenteraFajarPages from "./pages/LenteraFajarPages.jsx";
 import KinayaPages from "./pages/KinayaPages.jsx";
 import Navbar from "./components/Navbar.jsx";
 import ReactGA from "react-ga";
+// import RouteChangeTracker from "./RouteChangeTracker.jsx";
 
-const TRACKING_ID = "G-7KTC0QX99B";
+const TRACKING_ID = "G-9XGTSEKKFB";
 ReactGA.initialize(TRACKING_ID);
+
+ReactGA.event({
+    action: "link_action",
+    category: "link_category",
+    label: "link_label",
+    value: "xxx",
+});
+ReactGA.exception({
+    description: "An error ocurred",
+    fatal: true,
+});
 
 ReactDOM.createRoot(document.getElementById("classModules-nVrme9")).render(
     <React.StrictMode>

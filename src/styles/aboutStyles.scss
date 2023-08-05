@@ -268,3 +268,12 @@ $fontHeadTitleColor : #161515;
         }
     }
 }
+
+.socialContainer {
+    .social__list {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        align-self: flex-start;
+    }
+}

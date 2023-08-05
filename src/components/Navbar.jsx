@@ -29,7 +29,7 @@ const Navbar = () => {
                             </figure>
                             <span className="relative cursor-pointer overlay__me">
                                 <div className="flex items-center m-auto over__line">
-                                    <h3 className="relative align-middle hellow__its__me animate__bounce animate__animated">
+                                    <h3 className="relative align-middle hellow__its__me">
                                         Hello ✋
                                     </h3>
                                 </div>
