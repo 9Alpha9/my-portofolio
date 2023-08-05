@@ -33,7 +33,6 @@ export default function Skills() {
                                 </p>
                             </span>
                             <div className="flex flex-col w-full align-middle skillItems__dot">
-                                <h2>Inidicators Skills</h2>
                                 <div className="flex flex-row gap-3 py-3 indicators">
                                     <span className="block w-6 h-6 bg-black rounded-full"></span>
                                     <span className="block w-6 h-6 bg-black rounded-full"></span>
@@ -60,7 +59,6 @@ export default function Skills() {
                                 </p>
                             </span>
                             <div className="flex flex-col w-full align-middle skillItems__dot">
-                                <h2>Inidicators Skills</h2>
                                 <div className="flex flex-row gap-3 py-3 indicators">
                                     <span className="block w-6 h-6 bg-black rounded-full"></span>
                                     <span className="block w-6 h-6 bg-black rounded-full"></span>
@@ -86,7 +84,6 @@ export default function Skills() {
                                 </p>
                             </span>
                             <div className="flex flex-col w-full align-middle skillItems__dot">
-                                <h2>Inidicators Skills</h2>
                                 <div className="flex flex-row gap-3 py-3 indicators">
                                     <span className="block w-6 h-6 bg-black rounded-full"></span>
                                     <span className="block w-6 h-6 bg-black rounded-full"></span>
@@ -111,7 +108,6 @@ export default function Skills() {
                                 </p>
                             </span>
                             <div className="flex flex-col w-full align-middle skillItems__dot">
-                                <h2>Inidicators Skills</h2>
                                 <div className="flex flex-row gap-3 py-3 indicators">
                                     <span className="block w-6 h-6 bg-black rounded-full"></span>
                                     <span className="block w-6 h-6 bg-black rounded-full"></span>
@@ -136,7 +132,6 @@ export default function Skills() {
                                 </p>
                             </span>
                             <div className="flex flex-col w-full align-middle skillItems__dot">
-                                <h2>Inidicators Skills</h2>
                                 <div className="flex flex-row gap-3 py-3 indicators">
                                     <span className="block w-6 h-6 bg-black rounded-full"></span>
                                     <span className="block w-6 h-6 bg-black rounded-full"></span>
