@@ -2,22 +2,6 @@ import React from "react";
 
 const experience = [
     {
-        title: "Kinaya Interior Design",
-        number: "01",
-        id: "kinaya-interior",
-        description:
-            "Create a new design and Wireframe, Create responsive web, Slicing UI into code and interaction with backend to create a dummy data.",
-        date: "Mar, 2022",
-    },
-    {
-        title: "Lentera Fajar Indonesia",
-        number: "02",
-        id: "lentera-fajar",
-        description:
-            "Create a web design, Hold discussions with representatives from Lentera Fajar Indonesia, Create wireframe UI like a landing page, about, article, school activity, and gallery.",
-        date: "Jul, 2022",
-    },
-    {
         title: "PT. Anugrah Putra Kharisma",
         number: "03",
         id: "anugrah-putra",
@@ -27,21 +11,39 @@ const experience = [
         label: "Internship",
     },
     {
+        title: "Kinaya Interior Design",
+        number: "01",
+        id: "kinaya-interior",
+        description:
+            "Create a new design and Wireframe, Create responsive web, Slicing UI into code and interaction with backend to create a dummy data.",
+        date: "Mar, 2022",
+        label: "Freelances",
+    },
+    {
+        title: "Lentera Fajar Indonesia",
+        number: "02",
+        id: "lentera-fajar",
+        description:
+            "Create a web design, Hold discussions with representatives from Lentera Fajar Indonesia, Create wireframe UI like a landing page, about, article, school activity, and gallery.",
+        date: "Jul, 2022",
+        label: "Freelances",
+    },
+    {
         title: "Air Quality Control",
         number: "04",
         id: "anugrah-putra",
         description:
             "Creating Dashboard UI and slicing UI into code for showing condition air quality realtime and interaction with Backend developer.",
         date: "Dec, 2022",
-        label: "Internship",
+        label: "Freelances",
     },
 ];
 
 function WorkExperience() {
     return (
         <>
-            <div className="relative work__container">
-                <span className="block font-medium uppercase worksHeading whitespace-nowrap">
+            <div className="relative border-t work__container border-t-gray-300">
+                <span className="block mt-6 font-medium uppercase worksHeading whitespace-nowrap">
                     Works Of Experience
                 </span>
                 <div className="col-span-1 work__container">
@@ -56,10 +58,15 @@ function WorkExperience() {
                                         className="top-0 work__ExperienceHeading"
                                         key={experience.id}
                                     >
-                                        <span className="block text-sm">
-                                            {experience.date}
-                                        </span>
-                                        <h2 className="py-2 leading-6 xl:text-md">
+                                        <div className="flex flex-row gap-6 experienceGo__hd">
+                                            <span className="block text-sm">
+                                                {experience.date}
+                                            </span>
+                                            <span className="block text-sm uppercase">
+                                                {experience.label}
+                                            </span>
+                                        </div>
+                                        <h2 className="py-4 mt-5 leading-6 xl:text-md">
                                             {experience.title}
                                         </h2>
                                     </div>

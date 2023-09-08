@@ -148,7 +148,7 @@ const AboutArticleitems = () => {
                     </div>
                     <ArticleAboutinfo>
                         <ArticleHeading>
-                            <h2>Hello Frontend Lovers,</h2>
+                            <h2>Hello,</h2>
                         </ArticleHeading>
                         <ArticleAuthor className="py-2">
                             <h2>I'm Gilang Ramadhan</h2>
@@ -159,8 +159,8 @@ const AboutArticleitems = () => {
                             more than 2 years of experience. During my work as a
                             Freelancer in the field of UI/UX design, I have
                             helped increase and attract users to be able to
-                            access web pages by redesigning or creating UI.
-                            Apart from that, I also back-end developers.
+                            access web pages by redesigning or creating UI and
+                            I'm also a Graphic Designer.
                             <DownloadPorto className="my-10">
                                 <div className="flex cvLink__download ">
                                     <Link
