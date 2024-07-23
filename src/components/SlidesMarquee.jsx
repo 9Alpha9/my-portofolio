@@ -28,7 +28,7 @@ export default function MarqueeText() {
         gsap.set(motionTextOne.current, { xPercent: -xPercent });
         gsap.set(motionTextSecond.current, { xPercent: -xPercent });
         requestAnimationFrame(animate);
-        xPercent += 0.02;
+        xPercent += 0.009;
     };
 
     return (
@@ -38,7 +38,124 @@ export default function MarqueeText() {
                     <motion.div ref={slider} className={styles.slider}>
                         <div className={styles.motionContainer}>
                             <div className={styles.motion} ref={motionTextOne}>
+                                {/* <span className="flex gap-8">
+                                    <ul className="flex flex-row items-center gap-8">
+                                        <li>
+                                            {" "}
+                                            <StarsWhite />
+                                        </li>
+                                        <li>Let&apos;s Talk</li>
+                                        <li>
+                                            {" "}
+                                            <StarsWhite />
+                                        </li>
+                                        <li>UI/UX</li>
+                                        <li>
+                                            {" "}
+                                            <StarsWhite />
+                                        </li>
+                                        <li>React Js</li>
+                                        <li>
+                                            {" "}
+                                            <StarsWhite />
+                                        </li>
+                                        <li>Sass</li>
+                                        <li>
+                                            {" "}
+                                            <StarsWhite />
+                                        </li>
+                                        <li>Css</li>
+                                        <li>
+                                            {" "}
+                                            <StarsWhite />
+                                        </li>
+                                        <li>Figma</li>
+                                        <li>
+                                            {" "}
+                                            <StarsWhite />
+                                        </li>
+                                        <li>Tailwind Css</li>
+                                    </ul>
+                                </span> */}
                                 <span className="flex gap-8">
+                                    <ul className="flex flex-row items-center gap-8">
+                                        <li>
+                                            {" "}
+                                            <StarsWhite />
+                                        </li>
+                                        <li>Let&apos;s Talk</li>
+                                        <li>
+                                            {" "}
+                                            <StarsWhite />
+                                        </li>
+                                        <li>UI/UX</li>
+                                        <li>
+                                            {" "}
+                                            <StarsWhite />
+                                        </li>
+                                        <li>React Js</li>
+                                        <li>
+                                            {" "}
+                                            <StarsWhite />
+                                        </li>
+                                        <li>Sass</li>
+                                        <li>
+                                            {" "}
+                                            <StarsWhite />
+                                        </li>
+                                        <li>Css</li>
+                                        <li>
+                                            {" "}
+                                            <StarsWhite />
+                                        </li>
+                                        <li>Figma</li>
+                                        <li>
+                                            {" "}
+                                            <StarsWhite />
+                                        </li>
+                                        <li>Tailwind Css</li>
+                                    </ul>
+                                </span>
+                                <span className="flex gap-8">
+                                    <ul className="flex flex-row items-center gap-8">
+                                        <li>
+                                            {" "}
+                                            <StarsWhite />
+                                        </li>
+                                        <li>Let&apos;s Talk</li>
+                                        <li>
+                                            {" "}
+                                            <StarsWhite />
+                                        </li>
+                                        <li>UI/UX</li>
+                                        <li>
+                                            {" "}
+                                            <StarsWhite />
+                                        </li>
+                                        <li>React Js</li>
+                                        <li>
+                                            {" "}
+                                            <StarsWhite />
+                                        </li>
+                                        <li>Sass</li>
+                                        <li>
+                                            {" "}
+                                            <StarsWhite />
+                                        </li>
+                                        <li>Css</li>
+                                        <li>
+                                            {" "}
+                                            <StarsWhite />
+                                        </li>
+                                        <li>Figma</li>
+                                        <li>
+                                            {" "}
+                                            <StarsWhite />
+                                        </li>
+                                        <li>Tailwind Css</li>
+                                    </ul>
+                                </span>
+                                <span className="flex gap-8 pr-3">
                                     <ul className="flex flex-row items-center gap-8">
                                         <li>
                                             {" "}
@@ -82,6 +199,84 @@ export default function MarqueeText() {
                                 className={styles.motion}
                                 ref={motionTextSecond}
                             >
+                                <span className="flex gap-8">
+                                    <ul className="flex flex-row items-center gap-8">
+                                        <li>
+                                            {" "}
+                                            <StarsWhite />
+                                        </li>
+                                        <li>Let&apos;s Talk</li>
+                                        <li>
+                                            {" "}
+                                            <StarsWhite />
+                                        </li>
+                                        <li>UI/UX</li>
+                                        <li>
+                                            {" "}
+                                            <StarsWhite />
+                                        </li>
+                                        <li>React Js</li>
+                                        <li>
+                                            {" "}
+                                            <StarsWhite />
+                                        </li>
+                                        <li>Sass</li>
+                                        <li>
+                                            {" "}
+                                            <StarsWhite />
+                                        </li>
+                                        <li>Css</li>
+                                        <li>
+                                            {" "}
+                                            <StarsWhite />
+                                        </li>
+                                        <li>Figma</li>
+                                        <li>
+                                            {" "}
+                                            <StarsWhite />
+                                        </li>
+                                        <li>Tailwind Css</li>
+                                    </ul>
+                                </span>
+                                <span className="flex gap-8">
+                                    <ul className="flex flex-row items-center gap-8">
+                                        <li>
+                                            {" "}
+                                            <StarsWhite />
+                                        </li>
+                                        <li>Let&apos;s Talk</li>
+                                        <li>
+                                            {" "}
+                                            <StarsWhite />
+                                        </li>
+                                        <li>UI/UX</li>
+                                        <li>
+                                            {" "}
+                                            <StarsWhite />
+                                        </li>
+                                        <li>React Js</li>
+                                        <li>
+                                            {" "}
+                                            <StarsWhite />
+                                        </li>
+                                        <li>Sass</li>
+                                        <li>
+                                            {" "}
+                                            <StarsWhite />
+                                        </li>
+                                        <li>Css</li>
+                                        <li>
+                                            {" "}
+                                            <StarsWhite />
+                                        </li>
+                                        <li>Figma</li>
+                                        <li>
+                                            {" "}
+                                            <StarsWhite />
+                                        </li>
+                                        <li>Tailwind Css</li>
+                                    </ul>
+                                </span>
                                 <span className="flex gap-8">
                                     <ul className="flex flex-row items-center gap-8">
                                         <li>

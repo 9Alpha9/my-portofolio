@@ -5,6 +5,7 @@ import MainLandingWise from "./MainLandingWise";
 import "../styles/mainContent.scss";
 import MainLandingKinaya from "./MainLandingKinaya";
 import MainLandingLentera from "./MainLandingLentera";
+import ContentWrapper from "../components/landingPages/ContentWrapper";
 
 // import ReactGA from "react-ga";
 
@@ -20,9 +21,10 @@ const MainContent = () => {
     return (
         <>
             <div className="flex flex-col gap-10 py-32 wrapper__content">
-                <MainLandingWise />
-                <MainLandingLentera />
-                <MainLandingKinaya />
+                <ContentWrapper />
+                {/* <MainLandingWise /> */}
+                {/* <MainLandingLentera /> */}
+                {/* <MainLandingKinaya /> */}
             </div>
         </>
     );

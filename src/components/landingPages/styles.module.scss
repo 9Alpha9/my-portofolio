@@ -1,0 +1,38 @@
+.content {
+    img {
+        border-radius: 15px;
+        width: 100%;
+        height: 700px;
+        object-fit: cover;
+
+        &:hover {
+            opacity: 90%;
+        }
+    }
+}
+
+.contentContainer {
+    margin: 20px 0;
+
+}
+
+@media (min-width: 1200px) {
+    .contentHeading {
+        .gra {
+            color: #757575;
+            text-transform: uppercase;
+        }
+
+        .link {
+            .linkPages {
+                font-size: 30px;
+                font-weight: 300;
+
+                &:hover {
+                    color: #b80774;
+                }
+            }
+
+        }
+    }
+}

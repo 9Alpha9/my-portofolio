@@ -3,7 +3,7 @@ function StarsWhite() {
         <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 39.86 39.86"
-            fill="#000"
+            fill="#ababab"
             width={10}
         >
             <path

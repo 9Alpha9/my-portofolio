@@ -1,0 +1,193 @@
+.container {
+    // max-width: 1440px;
+    margin: auto;
+}
+
+img {
+    border-radius: 12px;
+}
+
+.headingWrapper {
+    .subHeading {
+        font-family: 'Space Grotesk', sans-serif;
+    }
+}
+
+@media (min-width: 0px) and (max-width:420px) {
+    .container {
+        padding: 10em 0;
+        max-width: 380px;
+        margin: 20px;
+
+        .wrapper {
+            img {
+                width: auto;
+                height: 400px;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .wrapperText {
+        .caseStudy_list {
+            // display: block;
+            margin: 10px 0;
+            color: #000;
+            font-size: 17px;
+        }
+    }
+
+    .headingTitle {
+        font-size: 25px;
+        font-weight: 800;
+    }
+
+    .headingWrapper {
+        .subHeading {
+            padding: 10px 0 30px;
+            color: #3a3a3a;
+            font-size: 20px;
+        }
+    }
+
+    .caseStudy {
+        color: #000;
+        font-size: 13px;
+
+        .listItems {
+            position: relative;
+        }
+
+
+        .showCase {
+            margin: 3em 0;
+
+            .showcaseHeading {
+                h1 {
+                    font-size: 24px;
+                    padding: 25px 0;
+                    font-weight: 600;
+                }
+            }
+
+            .showcaseHeading_Wr {
+                h1 {
+                    font-size: 18px;
+                    padding: 25px 0;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+
+}
+
+@media (min-width: 1201px) {
+    .container {
+        padding: 10em 0;
+        // max-width: 380px;
+        margin: 20px 4em;
+
+        .wrapper {
+            img {
+                width: 100%;
+                height: 100vh;
+                object-fit: cover;
+                box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+            }
+        }
+    }
+
+    .subHeadingTop {
+        font-size: 30px;
+    }
+
+    .headingTitle {
+        font-size: 55px;
+        font-weight: 800;
+    }
+
+    .headingWrapper {
+
+        .subHeading {
+            padding: 10px 0 30px;
+            color: #3a3a3a;
+            font-size: 40px;
+        }
+
+        .ctaLink {
+            color: #e0e0e0;
+            font-size: 23px;
+
+            span {
+                border-radius: 10px;
+                background-color: rgb(26, 26, 26);
+                padding: 20px 40px;
+                transition: ease-in-out .3s all;
+
+                &:hover {
+                    background-color: rgb(184, 7, 116);
+                }
+            }
+        }
+    }
+
+    .wrapperText {
+        .caseStudy_list {
+            // display: block;
+            margin: 10px 0;
+            color: #000;
+            font-size: 24px;
+        }
+    }
+
+    .caseStudy {
+        color: #000;
+        font-size: 23px;
+
+        .listItems {
+            position: relative;
+        }
+
+
+
+        .showCase {
+            .pictShowcase {
+                img {
+                    width: 100%;
+                    height: 800px;
+                    object-fit: cover;
+                    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+                }
+            }
+
+            .wireframeTemplates {
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+                }
+            }
+
+            margin: 3em 0;
+
+            .showcaseHeading {
+                h1 {
+                    font-size: 24px;
+                    padding: 25px 0;
+                    font-weight: 600;
+                }
+            }
+
+            .showcaseHeading_Wr {
+                h1 {
+                    font-size: 18px;
+                    padding: 25px 0;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
