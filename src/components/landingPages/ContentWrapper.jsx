@@ -9,7 +9,7 @@ function ContentWrapper() {
         <>
             <div className={`${styles.landingContainer}`}>
                 <div
-                    className={`${styles.landingContent} grid grid-cols-2 gap-4`}
+                    className={`${styles.landingContent} grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-4`}
                 >
                     <div className={`${styles.content}`}>
                         <Link to="/lentera-fajar">

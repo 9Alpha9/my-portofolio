@@ -27,7 +27,6 @@ $fontHeadTitleColor : #161515;
 
     h1 {
         font-size: $fontheadTitle;
-        max-width: 1201px;
 
     }
 
@@ -250,21 +249,30 @@ $fontHeadTitleColor : #161515;
 
 @media (1201px <=width) {
     .about__heading {
+        max-width: 1440px;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
 
         &::before {
             height: 364px;
             top: 0;
         }
 
-        h1 {
-            font-size: 8em;
+        .about__headWrapper {
+            position: relative;
+
+            h1 {
+                font-size: 8em;
+            }
         }
     }
 
     .about__meFigure {
         img {
-            height: 400px;
+            height: 600px;
             width: 100%;
+            object-fit: cover;
         }
     }
 }

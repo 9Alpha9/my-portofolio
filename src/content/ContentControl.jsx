@@ -22,9 +22,6 @@ const MainContent = () => {
         <>
             <div className="flex flex-col gap-10 py-32 wrapper__content">
                 <ContentWrapper />
-                {/* <MainLandingWise /> */}
-                {/* <MainLandingLentera /> */}
-                {/* <MainLandingKinaya /> */}
             </div>
         </>
     );

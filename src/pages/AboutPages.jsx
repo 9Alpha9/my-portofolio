@@ -14,9 +14,10 @@ import AboutArticleitems from "../content/aboutArticle/AboutArticleitems";
 const AboutPages = () => {
     const AboutWrapperContainer = styled.div`
         @media (1201px <= width) {
-            max-width: 1210px;
+            max-width: 1540px;
             margin: auto;
             align-items: center;
+            justify-content: center;
             display: block;
             padding: 2rem;
         }
@@ -49,13 +50,9 @@ const AboutPages = () => {
                 <AboutWrapperContainer>
                     <AboutContent>
                         <div className="about__heading">
-                            <SmoothScroll>
-                                <div className="relative about__headWrapper">
-                                    <h1 className="relative text-center">
-                                        About Me
-                                    </h1>
-                                </div>
-                            </SmoothScroll>
+                            <div className="about__headWrapper">
+                                <h1 className="text-center">About Me</h1>
+                            </div>
                             <figure className="about__meFigure">
                                 <LazyLoadImage src={ThisMe} />
                             </figure>

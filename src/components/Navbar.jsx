@@ -45,9 +45,6 @@ const Navbar = () => {
                                         <li className="nav__links__items">
                                             <Link to={"/about"}>About</Link>
                                         </li>
-                                        <li className="nav__links__items">
-                                            <Link to={"#"}>Works</Link>
-                                        </li>
                                     </ul>
                                 </span>
                             </div>
