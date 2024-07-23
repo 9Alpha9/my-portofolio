@@ -2,8 +2,7 @@
 import React from "react";
 import "../styles/aboutStyles.scss";
 import styled from "styled-components";
-import { gsap } from "gsap";
-import Marquee from "react-gsap-marquee";
+import SlideMarquee from "../components/SlidesMarquee";
 import SmoothScroll from "../SmoothScroll";
 import Footer from "../components/Footer";
 import ThisMe from "../assets/img/ThisMe.png";
@@ -21,7 +20,8 @@ const AboutPages = () => {
             display: block;
             padding: 2rem;
         }
-        @media (481px width <= 768px) {
+        @media (max-width: 768px) {
+            // Change from "481px width <= 768px" to "max-width: 768px"
             padding: 2rem;
         }
     `;
@@ -65,19 +65,7 @@ const AboutPages = () => {
                                     className="marquee__listItem"
                                 >
                                     <div className="marquee__headText">
-                                        <Marquee>
-                                            <p className="marquee__text">
-                                                <ul className="flex flex-row">
-                                                    <li>Let&apos;s Talk</li>
-                                                    <li>UI/UX</li>
-                                                    <li>React Js</li>
-                                                    <li>Sass</li>
-                                                    <li>Css</li>
-                                                    <li>Figma</li>
-                                                    <li>Tailwind Css</li>
-                                                </ul>
-                                            </p>
-                                        </Marquee>
+                                        <SlideMarquee />
                                     </div>
                                 </MarqueeContainer>
                             </MarqueeWrapper>
