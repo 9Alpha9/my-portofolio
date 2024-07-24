@@ -155,7 +155,7 @@ const AboutArticleitems = () => {
                         </ArticleAuthor>
 
                         <ArticleContent className="leading-8">
-                            I'm a UI/UX designer and Frontend Developer with
+                            I'm a UI/UX designer and Frontend Web Developer with
                             more than 2 years of experience. During my work as a
                             Freelancer in the field of UI/UX design, I have
                             helped increase and attract users to be able to

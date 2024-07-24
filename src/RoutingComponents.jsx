@@ -1,8 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-import HomeLanding from "./pages/HomeLanding";
-import AboutPages from "./pages/AboutPages";
-import WiseCommerce from "./pages/WiseCommerce";
+import HomeLanding from "./components/landingPages/HomeLanding";
+import LandingPage from "./pages/LandingPages";
 import LenteraFajarPages from "./pages/LenteraFajarPages";
 import KinayaPages from "./pages/KinayaPages";
 
@@ -11,15 +10,11 @@ const Routing = {
     children: [
         {
             path: "/",
+            element: <LandingPage />,
+        },
+        {
+            path: "portofolio",
             element: <HomeLanding />,
-        },
-        {
-            path: "about",
-            element: <AboutPages />,
-        },
-        {
-            path: "wise-commerce",
-            element: <WiseCommerce />,
         },
         {
             path: "lentera-fajar",

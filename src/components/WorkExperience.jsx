@@ -3,7 +3,7 @@ import React from "react";
 const experience = [
     {
         title: "PT. Anugrah Putra Kharisma",
-        number: "03",
+        number: "01",
         id: "anugrah-putra",
         description:
             "Internship and creating Dashboard component can help employee for find data realtime and interaction with Backend developer.",
@@ -12,7 +12,7 @@ const experience = [
     },
     {
         title: "Kinaya Interior Design",
-        number: "01",
+        number: "02",
         id: "kinaya-interior",
         description:
             "Create a new design and Wireframe, Create responsive web, Slicing UI into code and interaction with backend to create a dummy data.",
@@ -21,22 +21,22 @@ const experience = [
     },
     {
         title: "Lentera Fajar Indonesia",
-        number: "02",
+        number: "03",
         id: "lentera-fajar",
         description:
             "Create a web design, Hold discussions with representatives from Lentera Fajar Indonesia, Create wireframe UI like a landing page, about, article, school activity, and gallery.",
-        date: "Jul, 2022",
+        date: "Jul, 2023",
         label: "Freelances",
     },
-    {
-        title: "Air Quality Control",
-        number: "04",
-        id: "anugrah-putra",
-        description:
-            "Creating Dashboard UI and slicing UI into code for showing condition air quality realtime and interaction with Backend developer.",
-        date: "Dec, 2022",
-        label: "Freelances",
-    },
+    // {
+    //     title: "Air Quality Control",
+    //     number: "04",
+    //     id: "anugrah-putra",
+    //     description:
+    //         "Creating Dashboard UI and slicing UI into code for showing condition air quality realtime and interaction with Backend developer.",
+    //     date: "Dec, 2022",
+    //     label: "Freelances",
+    // },
 ];
 
 function WorkExperience() {

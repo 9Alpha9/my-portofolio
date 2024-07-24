@@ -1,13 +1,17 @@
 import React from "react";
-import styles from "../../components/landingPages/styles.module.scss";
-import LenteraThumbnail from "../../../public/img/LenteraMockMac.png";
-import KinayaThumbnail from "../../../public/img/KinayaRenderMac.png";
+import styles from "../components/styles/portfolio.styles.module.scss";
+import LenteraThumbnail from "../../public/img/LenteraMoc2.png";
+import KinayaThumbnail from "../../public/img/KinayaRenderMac.png";
 import { Link } from "react-router-dom";
+import Footer from "../components/Footer";
 
 function ContentWrapper() {
     return (
         <>
             <div className={`${styles.landingContainer}`}>
+                <div className={`${styles.landingHeader}`}>
+                    <span className={`${styles.TextHeader}`}>Portofolio</span>
+                </div>
                 <div
                     className={`${styles.landingContent} grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-4`}
                 >
@@ -67,6 +71,7 @@ function ContentWrapper() {
                     </div>
                 </div>
             </div>
+            <Footer />
         </>
     );
 }

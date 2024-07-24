@@ -1,10 +1,10 @@
 /* eslint-disable no-unused-vars */
 import React, { useRef, useEffect } from "react";
 import "../styles/homeStyles.scss";
-import ContentControl from "../content/ContentControl";
+import ContentControl from "../../content/ContentControl";
 import styled from "styled-components";
-import SmoothScroll from "../SmoothScroll";
-import Footer from "../components/Footer";
+import SmoothScroll from "../../SmoothScroll";
+import Footer from "../Footer";
 
 function Home() {
     const HeadingWrapper = styled.div`

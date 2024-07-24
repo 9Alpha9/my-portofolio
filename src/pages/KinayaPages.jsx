@@ -10,6 +10,7 @@ import KinayaConcept3 from "../../public/img/kinayaConcept_3.png";
 import WireframeKinaya from "../../public/img/WireframeKinaya.png";
 import KinayaFrame from "../../public/img/KinayaFrame.png";
 import SmoothScroll from "../SmoothScroll";
+import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 
 function KinayaPages() {
@@ -156,6 +157,7 @@ function KinayaPages() {
                         </div>
                     </div>
                 </div>
+                <Footer />
             </SmoothScroll>
         </>
     );

@@ -3,6 +3,13 @@ $logoBackdropBackground: rgba(168, 167, 167, 0.185);
 $fontFamilyNavbar: 'Space Grotesk',
 sans-serif;
 
+.linksCta {
+    &:hover {
+        color: rgb(184, 7, 116);
+    }
+
+}
+
 .nav {
     // background-color: $-navBackground;
     // padding: 1em;
@@ -397,8 +404,10 @@ sans-serif;
                 font-size: 1em;
 
                 .nav__link__item {
-                    padding: 1.1em 1.3em;
+                    padding: 1.5em 2em;
                     font-weight: 500;
+
+
                 }
             }
         }

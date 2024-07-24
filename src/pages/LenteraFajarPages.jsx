@@ -9,6 +9,7 @@ import WireframeLentera1 from "../../public/img/WireframeLentera.png";
 import LenteraMocs from "../../public/img/MockLentera.png";
 import LenteraPallete from "../../public/img/colorPalletLentera.png";
 import SmoothScroll from "../SmoothScroll";
+import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 
 function LenteraFajarPages() {
@@ -152,6 +153,7 @@ function LenteraFajarPages() {
                         </div>
                     </div>
                 </div>
+                <Footer />
             </SmoothScroll>
         </>
     );

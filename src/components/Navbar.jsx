@@ -3,7 +3,7 @@ import styled from "styled-components";
 import "../styles/navbarStyles.scss";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import MyFace from "../assets/img/MyFace.png";
-import AboutPages from "../pages/AboutPages";
+// import LandingPage from "../pages/LandingPage";
 import { Link } from "react-router-dom";
 
 const NavbarNav = styled.div`
@@ -37,13 +37,20 @@ const Navbar = () => {
                         </div>
                         <div className="nav__link ">
                             <div className="flex flex-row gap-3 xl:gap-4 nav__link__item text-gray-950 backdrop-blur-md">
-                                <span className="relative block gap-3">
+                                <span className="relative gap-3">
                                     <ul className="flex flex-row gap-4 nav__link__wrapper">
-                                        <li className="nav__links__items">
-                                            <Link to={"/"}>Home</Link>
+                                        <li className="nav__links__items whitespace-nowrap">
+                                            <Link to={"/"} className="linksCta">
+                                                About Me
+                                            </Link>
                                         </li>
                                         <li className="nav__links__items">
-                                            <Link to={"/about"}>About</Link>
+                                            <Link
+                                                to={"/portfolio"}
+                                                className="linksCta"
+                                            >
+                                                Portofolio
+                                            </Link>
                                         </li>
                                     </ul>
                                 </span>

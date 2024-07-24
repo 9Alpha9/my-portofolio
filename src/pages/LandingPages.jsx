@@ -28,7 +28,7 @@ const AboutPages = () => {
     `;
 
     const AboutContent = styled.div`
-        margin: 14rem 0;
+        // margin: 14rem 0;
     `;
 
     const MarqueeContainer = styled.div`
@@ -50,9 +50,9 @@ const AboutPages = () => {
                 <AboutWrapperContainer>
                     <AboutContent>
                         <div className="about__heading">
-                            <div className="about__headWrapper">
+                            {/* <div className="about__headWrapper">
                                 <h1 className="text-center">About Me</h1>
-                            </div>
+                            </div> */}
                             <figure className="about__meFigure">
                                 <LazyLoadImage src={ThisMe} />
                             </figure>

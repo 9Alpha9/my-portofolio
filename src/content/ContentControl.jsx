@@ -5,7 +5,7 @@ import MainLandingWise from "./MainLandingWise";
 import "../styles/mainContent.scss";
 import MainLandingKinaya from "./MainLandingKinaya";
 import MainLandingLentera from "./MainLandingLentera";
-import ContentWrapper from "../components/landingPages/ContentWrapper";
+import ContentWrapper from "../pages/Portfolio";
 
 // import ReactGA from "react-ga";
 
