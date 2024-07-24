@@ -14,6 +14,7 @@ img {
 }
 
 
+
 @media (min-width: 0px) and (max-width:420px) {
     .container {
         padding: 10em 0;
@@ -44,10 +45,27 @@ img {
     }
 
     .headingWrapper {
+
         .subHeading {
             padding: 10px 0 30px;
             color: #3a3a3a;
-            font-size: 20px;
+            font-size: 18px;
+        }
+
+        .ctaLink {
+            color: #e0e0e0;
+            font-size: 16px;
+
+            span {
+                border-radius: 10px;
+                background-color: rgb(26, 26, 26);
+                padding: 18px 20px;
+                transition: ease-in-out .3s all;
+
+                &:hover {
+                    background-color: rgb(184, 7, 116);
+                }
+            }
         }
     }
 
@@ -78,10 +96,716 @@ img {
                     font-weight: 600;
                 }
             }
+
+            .wireframeTemplates {
+                picture {
+                    img {
+                        height: 100%;
+                    }
+                }
+            }
+        }
+
+        .goals {
+            height: 100vh;
+            margin: 30px 0;
+            align-items: center;
+            display: inline-flex;
+
+            .goalsWrapper {
+                .goalsHeading {
+                    align-items: center;
+                    font-size: 40px;
+                    display: block;
+                    padding: 60px 0;
+                    font-weight: 700;
+                }
+
+                .goalsSubHeading {
+                    p {
+                        font-size: 25px;
+                        text-align: center;
+                        text-transform: uppercase;
+                        font-family: 'Space Grotesk', sans-serif;
+                        color: #646479;
+                        font-weight: 700;
+                        line-height: 1em;
+
+                    }
+                }
+
+                .timelineNotion {
+                    margin: 2em 0;
+                    display: flex;
+                    justify-content: center;
+
+                    .ctaNotion {
+                        font-size: 16px;
+                        padding: 18px 30px;
+                        border-radius: 10px;
+                        background-color: rgb(26, 26, 26);
+                        color: #e0e0e0;
+                        transition: ease-in-out .3s all;
+
+                        &:hover {
+                            background-color: rgb(184, 7, 116);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 421px) and (max-width:480px) {
+    .container {
+        padding: 10em 0;
+        max-width: 380px;
+        margin: 20px;
+
+        .wrapper {
+            img {
+                width: auto;
+                height: 400px;
+                object-fit: cover;
+            }
         }
     }
 
+    .wrapperText {
+        .caseStudy_list {
+            // display: block;
+            margin: 10px 0;
+            color: #000;
+            font-size: 17px;
+        }
+    }
 
+    .headingTitle {
+        font-size: 25px;
+        font-weight: 800;
+    }
+
+    .headingWrapper {
+
+        .subHeading {
+            padding: 10px 0 30px;
+            color: #3a3a3a;
+            font-size: 18px;
+        }
+
+        .ctaLink {
+            color: #e0e0e0;
+            font-size: 16px;
+
+            span {
+                border-radius: 10px;
+                background-color: rgb(26, 26, 26);
+                padding: 18px 20px;
+                transition: ease-in-out .3s all;
+
+                &:hover {
+                    background-color: rgb(184, 7, 116);
+                }
+            }
+        }
+    }
+
+    .caseStudy {
+        color: #000;
+        font-size: 13px;
+
+        .listItems {
+            position: relative;
+        }
+
+
+        .showCase {
+            margin: 3em 0;
+
+            .showcaseHeading {
+                h1 {
+                    font-size: 45px;
+                    padding: 25px 0;
+                    font-weight: 600;
+                }
+            }
+
+            .showcaseHeading_Wr {
+                h1 {
+                    font-size: 18px;
+                    padding: 25px 0;
+                    font-weight: 600;
+                }
+            }
+
+            .wireframeTemplates {
+                picture {
+                    img {
+                        height: 100%;
+                    }
+                }
+            }
+        }
+
+        .goals {
+            height: 100vh;
+            margin: 30px 0;
+            align-items: center;
+            display: inline-flex;
+
+            .goalsWrapper {
+                .goalsHeading {
+                    align-items: center;
+                    font-size: 40px;
+                    display: block;
+                    padding: 60px 0;
+                    font-weight: 700;
+                }
+
+                .goalsSubHeading {
+                    p {
+                        font-size: 25px;
+                        text-align: center;
+                        text-transform: uppercase;
+                        font-family: 'Space Grotesk', sans-serif;
+                        color: #646479;
+                        font-weight: 700;
+                        line-height: 1em;
+
+                    }
+                }
+
+                .timelineNotion {
+                    margin: 2em 0;
+                    display: flex;
+                    justify-content: center;
+
+                    .ctaNotion {
+                        font-size: 16px;
+                        padding: 18px 30px;
+                        border-radius: 10px;
+                        background-color: rgb(26, 26, 26);
+                        color: #e0e0e0;
+                        transition: ease-in-out .3s all;
+
+                        &:hover {
+                            background-color: rgb(184, 7, 116);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .container {
+        padding: 10em 0;
+        // max-width: 380px;
+        margin: 20px 4em;
+
+        .wrapper {
+            img {
+                width: 100%;
+                height: 100vh;
+                object-fit: cover;
+                box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+            }
+        }
+    }
+
+    .subHeadingTop {
+        font-size: 30px;
+    }
+
+    .headingTitle {
+        font-size: 55px;
+        font-weight: 800;
+    }
+
+    .headingWrapper {
+
+        .subHeading {
+            padding: 10px 0 30px;
+            color: #3a3a3a;
+            font-size: 40px;
+        }
+
+        .ctaLink {
+            color: #e0e0e0;
+            font-size: 23px;
+
+            span {
+                border-radius: 10px;
+                background-color: rgb(26, 26, 26);
+                padding: 20px 40px;
+                transition: ease-in-out .3s all;
+
+                &:hover {
+                    background-color: rgb(184, 7, 116);
+                }
+            }
+        }
+    }
+
+    .wrapperText {
+        .caseStudy_list {
+            // display: block;
+            margin: 10px 0;
+            color: #000;
+            font-size: 24px;
+        }
+    }
+
+    .caseStudy {
+        .showCase {
+            .pictureCenter {
+                img {
+                    object-fit: cover;
+                    height: 800px;
+                    width: 100%;
+                    background-repeat: no-repeat;
+                }
+            }
+
+            .goals {
+                height: 100vh;
+                margin: 30px 0;
+                align-items: center;
+                display: inline-flex;
+
+                .goalsWrapper {
+                    .goalsHeading {
+                        align-items: center;
+                        font-size: 80px;
+                        display: block;
+                        padding: 60px 0;
+                        font-weight: 700;
+                    }
+
+                    .goalsSubHeading {
+                        p {
+                            font-size: 65px;
+                            text-align: center;
+                            text-transform: uppercase;
+                            font-family: 'Space Grotesk', sans-serif;
+                            color: #646479;
+                            font-weight: 700;
+                            line-height: 1em;
+
+                        }
+                    }
+
+                    .timelineNotion {
+                        margin: 2em 0;
+                        display: flex;
+                        justify-content: center;
+
+                        .ctaNotion {
+                            padding: 20px 40px;
+                            border-radius: 10px;
+                            background-color: rgb(26, 26, 26);
+                            color: #e0e0e0;
+                            transition: ease-in-out .3s all;
+
+                            &:hover {
+                                background-color: rgb(184, 7, 116);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .caseStudy {
+        color: #000;
+        font-size: 23px;
+
+        .listItems {
+            position: relative;
+        }
+
+        .showCase {
+            .pictShowcase {
+                img {
+                    width: 100%;
+                    height: 800px;
+                    object-fit: cover;
+                    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+                }
+            }
+
+            .wireframeTemplates {
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+                }
+            }
+
+            margin: 3em 0;
+
+            .showcaseHeading {
+                h1 {
+                    font-size: 45px;
+                    padding: 25px 0;
+                    font-weight: 600;
+                }
+            }
+
+            .showcaseHeading_Wr {
+                h1 {
+                    font-size: 18px;
+                    padding: 25px 0;
+                    font-weight: 600;
+                }
+            }
+
+        }
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1023px) {
+    .container {
+        padding: 10em 0;
+        // max-width: 380px;
+        margin: 20px 4em;
+
+        .wrapper {
+            img {
+                width: 100%;
+                height: 100vh;
+                object-fit: cover;
+                box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+            }
+        }
+    }
+
+    .subHeadingTop {
+        font-size: 30px;
+    }
+
+    .headingTitle {
+        font-size: 55px;
+        font-weight: 800;
+    }
+
+    .headingWrapper {
+
+        .subHeading {
+            padding: 10px 0 30px;
+            color: #3a3a3a;
+            font-size: 40px;
+        }
+
+        .ctaLink {
+            color: #e0e0e0;
+            font-size: 23px;
+
+            span {
+                border-radius: 10px;
+                background-color: rgb(26, 26, 26);
+                padding: 20px 40px;
+                transition: ease-in-out .3s all;
+
+                &:hover {
+                    background-color: rgb(184, 7, 116);
+                }
+            }
+        }
+    }
+
+    .wrapperText {
+        .caseStudy_list {
+            // display: block;
+            margin: 10px 0;
+            color: #000;
+            font-size: 24px;
+        }
+    }
+
+    .caseStudy {
+        .showCase {
+            .pictureCenter {
+                img {
+                    object-fit: cover;
+                    height: 800px;
+                    width: 100%;
+                    background-repeat: no-repeat;
+                }
+            }
+
+            .goals {
+                height: 100vh;
+                margin: 30px 0;
+                align-items: center;
+                display: inline-flex;
+
+                .goalsWrapper {
+                    .goalsHeading {
+                        align-items: center;
+                        font-size: 80px;
+                        display: block;
+                        padding: 60px 0;
+                        font-weight: 700;
+                    }
+
+                    .goalsSubHeading {
+                        p {
+                            font-size: 65px;
+                            text-align: center;
+                            text-transform: uppercase;
+                            font-family: 'Space Grotesk', sans-serif;
+                            color: #646479;
+                            font-weight: 700;
+                            line-height: 1em;
+
+                        }
+                    }
+
+                    .timelineNotion {
+                        margin: 2em 0;
+                        display: flex;
+                        justify-content: center;
+
+                        .ctaNotion {
+                            padding: 20px 40px;
+                            border-radius: 10px;
+                            background-color: rgb(26, 26, 26);
+                            color: #e0e0e0;
+                            transition: ease-in-out .3s all;
+
+                            &:hover {
+                                background-color: rgb(184, 7, 116);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .caseStudy {
+        color: #000;
+        font-size: 23px;
+
+        .listItems {
+            position: relative;
+        }
+
+
+
+        .showCase {
+            .pictShowcase {
+                img {
+                    width: 100%;
+                    height: 800px;
+                    object-fit: cover;
+                    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+                }
+            }
+
+            .wireframeTemplates {
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+                }
+            }
+
+            margin: 3em 0;
+
+            .showcaseHeading {
+                h1 {
+                    font-size: 80px;
+                    padding: 25px 0;
+                    font-weight: 600;
+                }
+            }
+
+            .showcaseHeading_Wr {
+                h1 {
+                    font-size: 18px;
+                    padding: 25px 0;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+    .container {
+        padding: 10em 0;
+        // max-width: 380px;
+        margin: 20px 4em;
+
+        .wrapper {
+            img {
+                width: 100%;
+                height: 100vh;
+                object-fit: cover;
+                box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+            }
+        }
+    }
+
+    .subHeadingTop {
+        font-size: 30px;
+    }
+
+    .headingTitle {
+        font-size: 55px;
+        font-weight: 800;
+    }
+
+    .headingWrapper {
+
+        .subHeading {
+            padding: 10px 0 30px;
+            color: #3a3a3a;
+            font-size: 40px;
+        }
+
+        .ctaLink {
+            color: #e0e0e0;
+            font-size: 23px;
+
+            span {
+                border-radius: 10px;
+                background-color: rgb(26, 26, 26);
+                padding: 20px 40px;
+                transition: ease-in-out .3s all;
+
+                &:hover {
+                    background-color: rgb(184, 7, 116);
+                }
+            }
+        }
+    }
+
+    .wrapperText {
+        .caseStudy_list {
+            // display: block;
+            margin: 10px 0;
+            color: #000;
+            font-size: 24px;
+        }
+    }
+
+    .caseStudy {
+        .showCase {
+            .pictureCenter {
+                img {
+                    object-fit: cover;
+                    height: 800px;
+                    width: 100%;
+                    background-repeat: no-repeat;
+                }
+            }
+
+            .goals {
+                height: 100vh;
+                margin: 30px 0;
+                align-items: center;
+                display: inline-flex;
+
+                .goalsWrapper {
+                    .goalsHeading {
+                        align-items: center;
+                        font-size: 80px;
+                        display: block;
+                        padding: 60px 0;
+                        font-weight: 700;
+                    }
+
+                    .goalsSubHeading {
+                        p {
+                            font-size: 65px;
+                            text-align: center;
+                            text-transform: uppercase;
+                            font-family: 'Space Grotesk', sans-serif;
+                            color: #646479;
+                            font-weight: 700;
+                            line-height: 1em;
+
+                        }
+                    }
+
+                    .timelineNotion {
+                        margin: 2em 0;
+                        display: flex;
+                        justify-content: center;
+
+                        .ctaNotion {
+                            padding: 20px 40px;
+                            border-radius: 10px;
+                            background-color: rgb(26, 26, 26);
+                            color: #e0e0e0;
+                            transition: ease-in-out .3s all;
+
+                            &:hover {
+                                background-color: rgb(184, 7, 116);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .caseStudy {
+        color: #000;
+        font-size: 23px;
+
+        .listItems {
+            position: relative;
+        }
+
+
+
+        .showCase {
+            .pictShowcase {
+                img {
+                    width: 100%;
+                    height: 800px;
+                    object-fit: cover;
+                    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+                }
+            }
+
+            .wireframeTemplates {
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+                }
+            }
+
+            margin: 3em 0;
+
+            .showcaseHeading {
+                h1 {
+                    font-size: 80px;
+                    padding: 25px 0;
+                    font-weight: 600;
+                }
+            }
+
+            .showcaseHeading_Wr {
+                h1 {
+                    font-size: 18px;
+                    padding: 25px 0;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
 }
 
 @media (min-width: 1201px) {
@@ -144,6 +868,67 @@ img {
     }
 
     .caseStudy {
+        .showCase {
+            .pictureCenter {
+                img {
+                    object-fit: cover;
+                    height: 800px;
+                    width: 100%;
+                    background-repeat: no-repeat;
+                }
+            }
+
+            .goals {
+                height: 100vh;
+                margin: 30px 0;
+                align-items: center;
+                display: inline-flex;
+
+                .goalsWrapper {
+                    .goalsHeading {
+                        align-items: center;
+                        font-size: 80px;
+                        display: block;
+                        padding: 60px 0;
+                        font-weight: 700;
+                    }
+
+                    .goalsSubHeading {
+                        p {
+                            font-size: 65px;
+                            text-align: center;
+                            text-transform: uppercase;
+                            font-family: 'Space Grotesk', sans-serif;
+                            color: #646479;
+                            font-weight: 700;
+                            line-height: 1em;
+
+                        }
+                    }
+
+                    .timelineNotion {
+                        margin: 2em 0;
+                        display: flex;
+                        justify-content: center;
+
+                        .ctaNotion {
+                            padding: 20px 40px;
+                            border-radius: 10px;
+                            background-color: rgb(26, 26, 26);
+                            color: #e0e0e0;
+                            transition: ease-in-out .3s all;
+
+                            &:hover {
+                                background-color: rgb(184, 7, 116);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .caseStudy {
         color: #000;
         font-size: 23px;
 
@@ -176,7 +961,7 @@ img {
 
             .showcaseHeading {
                 h1 {
-                    font-size: 24px;
+                    font-size: 80px;
                     padding: 25px 0;
                     font-weight: 600;
                 }

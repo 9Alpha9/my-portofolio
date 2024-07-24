@@ -6,6 +6,8 @@ import LenteraShowcase1 from "../../public/img/LenteraShowcase1.jpg";
 import LenteraShowcase2 from "../../public/img/12ColumnLentera.png";
 import WireframeLentera2 from "../../public/img/LenteraMoc3.png";
 import WireframeLentera1 from "../../public/img/WireframeLentera.png";
+import LenteraMocs from "../../public/img/MockLentera.png";
+import LenteraPallete from "../../public/img/colorPalletLentera.png";
 import SmoothScroll from "../SmoothScroll";
 import { Link } from "react-router-dom";
 
@@ -18,7 +20,7 @@ function LenteraFajarPages() {
                         <span className={`${styles.headingTitle}`}>
                             Sekolah Lentera Fajar Indonesia
                         </span>
-                        <p className={`${styles.subHeadingTop} xl:pb-8`}>
+                        <p className={`${styles.subHeadingTop} pb-8 xl:pb-8`}>
                             Freelance - 2023
                         </p>
                     </div>
@@ -88,10 +90,54 @@ function LenteraFajarPages() {
                                         <img src={LenteraShowcase2} alt="" />
                                     </picture>
                                 </div>
-                                {/* <span
-                                    className={`${styles.showcaseHeading_Wr}`}
+                                <div className={`${styles.goals}`}>
+                                    <div className={`${styles.goalsWrapper}`}>
+                                        <span
+                                            className={`${styles.goalsHeading}`}
+                                        >
+                                            Goals
+                                        </span>
+
+                                        <div
+                                            className={`${styles.goalsSubHeading}`}
+                                        >
+                                            <p>
+                                                Untuk menyimpan dan mengelola
+                                                segala dokumen hasil dari
+                                                aktifitas yang terjadi didalam
+                                                kegiatan belajar mengajar.
+                                                Dimana nantinya aplikasi website
+                                                yang dibangun dapat digunakan
+                                                untuk mempermudah pengguna dalam
+                                                melakukan penambahan data,
+                                                mengubah data, menampilkan data,
+                                                dan mencari data yang
+                                                dibutuhkan.
+                                            </p>
+                                            <div
+                                                className={`${styles.timelineNotion}`}
+                                            >
+                                                <Link
+                                                    to="https://steady-pyroraptor-859.notion.site/Notes-Compro-d0dab544b3dd4289a5d4b943aef8047a"
+                                                    target="_blank"
+                                                    className={`${styles.ctaNotion}`}
+                                                >
+                                                    <span>Lihat Timeline</span>
+                                                </Link>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    className={`${styles.pictureCenter} pt-8 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8`}
                                 >
-                                </span> */}
+                                    <picture>
+                                        <img src={LenteraMocs} alt="" />
+                                    </picture>
+                                    <picture className="lg:col-span-1 md:col-span-0 xl:col-span-2">
+                                        <img src={LenteraPallete} alt="" />
+                                    </picture>
+                                </div>
                                 <div
                                     className={`${styles.wireframeTemplates} py-8 grid grid-cols-1 lg:grid-cols-2 gap-8`}
                                 >
