@@ -12,10 +12,14 @@ import KinayaFrame from "../../public/img/KinayaFrame.png";
 import SmoothScroll from "../SmoothScroll";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 function KinayaPages() {
     return (
         <>
+            <Helmet>
+                <title>Kinaya Interior Design</title>
+            </Helmet>
             <SmoothScroll>
                 <div className={`${styles.container}`}>
                     <div className="text-gray-950">

@@ -8,6 +8,7 @@ import Footer from "../components/Footer";
 import ThisMe from "../assets/img/ThisMe.png";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet";
 
 import AboutArticleitems from "../content/aboutArticle/AboutArticleitems";
 
@@ -46,6 +47,9 @@ const AboutPages = () => {
 
     return (
         <>
+            <Helmet>
+                <title>Welcome ✋ To Gilang's Portofolio</title>
+            </Helmet>
             <SmoothScroll>
                 <AboutWrapperContainer>
                     <AboutContent>

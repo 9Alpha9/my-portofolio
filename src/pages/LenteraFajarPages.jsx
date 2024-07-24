@@ -11,10 +11,14 @@ import LenteraPallete from "../../public/img/colorPalletLentera.png";
 import SmoothScroll from "../SmoothScroll";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 function LenteraFajarPages() {
     return (
         <>
+            <Helmet>
+                <title>Lentera Fajar Indonesia</title>
+            </Helmet>
             <SmoothScroll>
                 <div className={`${styles.container}`}>
                     <div className="text-gray-950">
