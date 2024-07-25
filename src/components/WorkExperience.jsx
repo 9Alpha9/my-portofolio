@@ -1,32 +1,35 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const experience = [
-    {
-        title: "PT. Anugrah Putra Kharisma",
-        number: "01",
-        id: "anugrah-putra",
-        description:
-            "Internship and creating Dashboard component can help employee for find data realtime and interaction with Backend developer.",
-        date: "Oct, 2020",
-        label: "Internship",
-    },
+    // {
+    //     title: "PT. Anugrah Putra Kharisma",
+    //     number: "01",
+    //     id: "anugrah-putra",
+    //     description:
+    //         "Internship and creating Dashboard component can help employee for find data realtime and interaction with Backend developer.",
+    //     date: "Oct, 2020",
+    //     label: "Internship",
+    // },
     {
         title: "Kinaya Interior Design",
-        number: "02",
+        number: "01",
         id: "kinaya-interior",
         description:
             "Create a new design and Wireframe, Create responsive web, Slicing UI into code and interaction with backend to create a dummy data.",
         date: "Mar, 2022",
         label: "Freelances",
+        link: "/kinaya",
     },
     {
         title: "Lentera Fajar Indonesia",
-        number: "03",
+        number: "02",
         id: "lentera-fajar",
         description:
             "Create a web design, Hold discussions with representatives from Lentera Fajar Indonesia, Create wireframe UI like a landing page, about, article, school activity, and gallery.",
         date: "Jul, 2023",
         label: "Freelances",
+        link: "/lentera-fajar",
     },
 ];
 
@@ -65,6 +68,13 @@ function WorkExperience() {
                                         <p className="text-sm">
                                             {experience.description}
                                         </p>
+                                    </div>
+                                    <div className="link">
+                                        <Link to={experience.link}>
+                                            <span className="p-2 px-6 text-sm text-white duration-500 ease-in-out bg-gray-700 hover:bg-pinky-slate">
+                                                Lihat Portofolio
+                                            </span>
+                                        </Link>
                                     </div>
                                 </div>
                             </>

@@ -2,7 +2,11 @@
 export default {
     content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
     theme: {
-        extend: {},
+        extend: {
+            colors: {
+                "pinky-slate": "rgb(184, 7, 116)",
+            },
+        },
     },
     plugins: [],
 };
