@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../CmpEducation/styles.module.scss";
+import styles from "./styles.module.scss";
 
 function Education() {
     const Education = [

@@ -14,8 +14,8 @@ import {
 import { motion, useAnimation, easeInOut } from "framer-motion";
 import WorkExperience from "../../components/WorkExperience";
 import Skills from "../../components/Skills";
-import Education from "../../components/CmpEducation/Education";
-import Organization from "../../components/CmpOrganization/Organization";
+import Education from "../../components/education/Education";
+import Organization from "../../components/organization/Organization";
 
 const AboutArticleitems = () => {
     const ArticleWrapper = styled.div`
