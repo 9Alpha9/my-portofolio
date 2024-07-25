@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./styles.module.scss";
 import BagianLogo from "../../../public/img/bagianLogo.png";
+import { Link } from "react-router-dom";
 
 function Organization() {
     const OrganizationMap = [
@@ -12,6 +13,7 @@ function Organization() {
             date: "2019 - Presents",
             label: "UI/UX & Frontend Web",
             image: BagianLogo,
+            link: "https://www.bagian.net/tentang-kami",
         },
     ];
     return (
@@ -52,10 +54,20 @@ function Organization() {
                                         {organization.title}
                                     </h2>
                                 </div>
-                                <div className="">
+                                <div>
                                     <p className="text-sm">
                                         {organization.description}
                                     </p>
+                                </div>
+                                <div className="pt-4 link">
+                                    <Link
+                                        to={organization.link}
+                                        target="_blank"
+                                    >
+                                        <span className="block w-full p-2 px-6 text-sm text-center text-white duration-500 ease-in-out bg-gray-700 rounded-md hover:bg-slate-500">
+                                            Kunjungi Situs
+                                        </span>
+                                    </Link>
                                 </div>
                             </div>
                         </>
