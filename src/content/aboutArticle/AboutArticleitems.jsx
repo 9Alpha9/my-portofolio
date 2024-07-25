@@ -133,7 +133,7 @@ const AboutArticleitems = () => {
                                     </LinkedinMoverel__>
                                 </Link>
                                 <Link
-                                    to="https://www.behance.net/gilangalfii"
+                                    to="https://www.behance.net/joeys-ui"
                                     target="_blank"
                                 >
                                     <BehanceMoverel__ className="flex items-center gap-3 p-3 px-10 text-center duration-300 delay-150 eas-in-out behance__moreRel">
