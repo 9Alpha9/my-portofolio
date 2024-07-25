@@ -71,7 +71,7 @@ function WorkExperience() {
                                     </div>
                                     <div className="link">
                                         <Link to={experience.link}>
-                                            <span className="p-2 px-6 text-sm text-white duration-500 ease-in-out bg-gray-700 hover:bg-pinky-slate">
+                                            <span className="block w-full p-2 px-6 text-sm text-center text-white duration-500 ease-in-out bg-gray-700 rounded-md hover:bg-slate-500">
                                                 Lihat Portofolio
                                             </span>
                                         </Link>
