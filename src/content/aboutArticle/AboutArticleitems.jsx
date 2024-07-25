@@ -12,16 +12,14 @@ import {
     FaSquareGithub,
 } from "react-icons/fa6";
 import { motion, useAnimation, easeInOut } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-
-import ThisMe from "../../assets/img/ThisMe.png";
-import SmoothScroll from "../../SmoothScroll";
 import WorkExperience from "../../components/WorkExperience";
-import Education from "../../components/Education";
 import Skills from "../../components/Skills";
+import Education from "../../components/CmpEducation/Education";
+import Organization from "../../components/CmpOrganization/Organization";
 
 const AboutArticleitems = () => {
     const ArticleWrapper = styled.div`
+        margin: 20px;
         gap: 5%;
         @media (1201px <= width) {
             display: flex;
@@ -177,7 +175,8 @@ const AboutArticleitems = () => {
                             </DownloadPorto>
                             <WorkExperience />
                             <Skills />
-                            {/* <Education /> */}
+                            <Education />
+                            <Organization />
                             {/* <p>Hold on, it's not stop in here❤️. Update Soon</p> */}
                         </ArticleContent>
                     </ArticleAboutinfo>

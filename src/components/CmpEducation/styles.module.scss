@@ -1,0 +1,17 @@
+.educationWrapper {
+    .educationContent {
+        .educationHeader {
+            font-size: 18px;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+
+        .educationItems {
+            padding: 25px 0;
+
+            .educationMap {
+                position: relative;
+            }
+        }
+    }
+}

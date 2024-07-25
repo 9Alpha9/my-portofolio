@@ -28,15 +28,6 @@ const experience = [
         date: "Jul, 2023",
         label: "Freelances",
     },
-    // {
-    //     title: "Air Quality Control",
-    //     number: "04",
-    //     id: "anugrah-putra",
-    //     description:
-    //         "Creating Dashboard UI and slicing UI into code for showing condition air quality realtime and interaction with Backend developer.",
-    //     date: "Dec, 2022",
-    //     label: "Freelances",
-    // },
 ];
 
 function WorkExperience() {

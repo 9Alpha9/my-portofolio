@@ -8,18 +8,17 @@ import WireframeLentera2 from "../../public/img/LenteraMoc3.png";
 import WireframeLentera1 from "../../public/img/WireframeLentera.png";
 import LenteraMocs from "../../public/img/MockLentera.png";
 import LenteraPallete from "../../public/img/colorPalletLentera.png";
-import SmoothScroll from "../SmoothScroll";
-import Footer from "../components/Footer";
+import SmoothScroll from "../components/LenisScroll";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
 function LenteraFajarPages() {
     return (
-        <>
-            <Helmet>
-                <title>Lentera Fajar Indonesia</title>
-            </Helmet>
-            <SmoothScroll>
+        <SmoothScroll>
+            <>
+                <Helmet>
+                    <title>Lentera Fajar Indonesia</title>
+                </Helmet>
                 <div className={`${styles.container}`}>
                     <div className="text-gray-950">
                         <span className={`${styles.headingTitle}`}>
@@ -157,9 +156,8 @@ function LenteraFajarPages() {
                         </div>
                     </div>
                 </div>
-                <Footer />
-            </SmoothScroll>
-        </>
+            </>
+        </SmoothScroll>
     );
 }
 

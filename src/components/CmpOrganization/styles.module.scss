@@ -1,0 +1,17 @@
+.organizationWrapper {
+    .organizationContent {
+        .organizationHeader {
+            font-size: 18px;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+
+        .organizationItems {
+            padding: 25px 0;
+
+            .organizationMap {
+                position: relative;
+            }
+        }
+    }
+}

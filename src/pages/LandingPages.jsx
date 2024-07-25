@@ -1,15 +1,14 @@
 /* eslint-disable no-unused-vars */
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "../styles/aboutStyles.scss";
 import styled from "styled-components";
 import SlideMarquee from "../components/SlidesMarquee";
-import SmoothScroll from "../SmoothScroll";
-import Footer from "../components/Footer";
-import ThisMe from "../assets/img/ThisMe.png";
+// import SmoothScroll from "../SmoothScroll";
+import Profiles from "../../public/profile/profiles.jpg";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
-
+import SmoothScroll from "../components/LenisScroll";
 import AboutArticleitems from "../content/aboutArticle/AboutArticleitems";
 
 const AboutPages = () => {
@@ -24,7 +23,7 @@ const AboutPages = () => {
         }
         @media (max-width: 768px) {
             // Change from "481px width <= 768px" to "max-width: 768px"
-            padding: 2rem;
+            // padding: 1rem;
         }
     `;
 
@@ -46,19 +45,19 @@ const AboutPages = () => {
     `;
 
     return (
-        <>
-            <Helmet>
-                <title>Welcome ✋ To Gilang's Portofolio</title>
-            </Helmet>
-            <SmoothScroll>
+        <SmoothScroll>
+            <>
+                <Helmet>
+                    <title>Welcome ✋ To Gilang's Portofolio</title>
+                </Helmet>
                 <AboutWrapperContainer>
                     <AboutContent>
                         <div className="about__heading">
                             {/* <div className="about__headWrapper">
                                 <h1 className="text-center">About Me</h1>
                             </div> */}
-                            <figure className="about__meFigure">
-                                <LazyLoadImage src={ThisMe} />
+                            <figure className="m-4 about__meFigure">
+                                <LazyLoadImage src={Profiles} />
                             </figure>
                             <MarqueeWrapper>
                                 <MarqueeContainer
@@ -78,9 +77,8 @@ const AboutPages = () => {
                         </div>
                     </AboutContent>
                 </AboutWrapperContainer>
-                <Footer />
-            </SmoothScroll>
-        </>
+            </>
+        </SmoothScroll>
     );
 };
 

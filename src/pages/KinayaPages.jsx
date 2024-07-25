@@ -161,7 +161,6 @@ function KinayaPages() {
                         </div>
                     </div>
                 </div>
-                <Footer />
             </SmoothScroll>
         </>
     );
