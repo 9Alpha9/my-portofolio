@@ -1,7 +1,10 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import Lenis from "@studio-freight/lenis";
+import { gsap } from "gsap";
 
 const LenisScroll = ({ children }) => {
+    const ref = useRef(null);
+
     useEffect(() => {
         const lenis = new Lenis({
             lerp: 0.09,
@@ -21,7 +24,14 @@ const LenisScroll = ({ children }) => {
         };
     }, []);
 
-    return <>{children}</>;
+    useEffect(() => {
+        if (ref.current) {
+            // Memastikan elemen ada
+            gsap.to(ref.current, { opacity: 1, duration: 1 }); // Contoh animasi
+        }
+    }, [ref]);
+    gsap.config({ nullTargetWarn: false });
+    return <div ref={ref}>{children}</div>;
 };
 
 export default LenisScroll;
