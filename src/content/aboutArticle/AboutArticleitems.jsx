@@ -170,7 +170,10 @@ const AboutArticleitems = () => {
                             </div>
                             <div className="aboutInfo__items mt-11">
                                 <ArticleHeading>
-                                    <h2>Hello 👋</h2>
+                                    <h2>
+                                        Hello{" "}
+                                        <span className="shake-emoji">🖐️</span>
+                                    </h2>
                                 </ArticleHeading>
                                 <ArticleAuthor className="py-1 xl:leading-[1em]">
                                     <h2 className="font-semibold xl:text-[3.5rem] text-[2rem]">
