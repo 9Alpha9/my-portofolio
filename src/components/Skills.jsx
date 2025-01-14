@@ -54,7 +54,7 @@ const skillConnector = [
         title: "Adobe Photoshop",
         id: "adobe-photoshop",
         description:
-            "Adobe Photoshop is a tools for editing photo, creat a poster, create 3D, create a photo manipulation.",
+            "Adobe Photoshop is a tools for editing photo, and create a photo manipulation and many more.",
         ability: "Hight Intermediate",
     },
     {
@@ -65,9 +65,16 @@ const skillConnector = [
         ability: "Hight Intermediate",
     },
     {
+        title: "Adobe InDesign",
+        id: "adobe-InDesign",
+        description:
+            "Mostly I'm used it after the program finish for creating a manual book for how to setup the program.",
+        ability: "Hight Intermediate",
+    },
+    {
         title: "Next.Js",
         id: "Next.Js",
-        description: "Today I'm still learning about Next.JS for projects",
+        description: "Today I'm still learning about Next.JS.",
         ability: "Learning",
     },
 ];
@@ -90,13 +97,13 @@ export default function Skills() {
                                             {skillConnector.description}
                                         </p>
                                     </span>
-                                    <div className="flex flex-col w-full align-middle skillItems__dot">
+                                    {/* <div className="flex flex-col w-full align-middle skillItems__dot">
                                         <div className="relative flex flex-row gap-3 py-3 indicators">
                                             <span className="block p-1.5 px-4 text-sm font-thin text-white uppercase bg-gray-700 rounded-sm">
                                                 {skillConnector.ability}
                                             </span>
                                         </div>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </>
                         ))}

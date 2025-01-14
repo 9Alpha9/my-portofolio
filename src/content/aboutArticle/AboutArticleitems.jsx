@@ -177,14 +177,15 @@ const AboutArticleitems = () => {
                                         I'm Gilang Ramadhan
                                     </h2>
                                 </ArticleAuthor>
-                                <ArticleContent className="leading-8">
-                                    I'm a UI/UX designer and Frontend Web
-                                    Developer with more than 2 years of
-                                    experience. During my work as a Freelancer
-                                    in the field of UI/UX design, I have helped
-                                    increase and attract users to be able to
-                                    access web pages by redesigning or creating
-                                    UI and I'm also a Graphic Designer.
+                                <ArticleContent className="py-8 leading-8">
+                                    Fresh Graduate from Dinamika University
+                                    (Stikom Surabaya), and I'm a UI/UX designer
+                                    and Frontend Web Developer with more than 2
+                                    years of experience. During my work as a
+                                    Freelancer in the field of UI/UX design, I
+                                    have helped increase and attract users to be
+                                    able to access web pages by redesigning or
+                                    creating UI and I'm also a Graphic Designer.
                                 </ArticleContent>
                                 <DownloadPorto className="my-10">
                                     <div className="flex cvLink__download ">
