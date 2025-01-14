@@ -36,7 +36,7 @@ const experience = [
 function WorkExperience() {
     return (
         <>
-            <div className="relative border-t work__container border-t-gray-300">
+            <div className="relative work__container">
                 <span className="block mt-6 font-medium uppercase worksHeading whitespace-nowrap">
                     Works Of Experience
                 </span>

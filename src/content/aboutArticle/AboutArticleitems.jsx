@@ -16,6 +16,8 @@ import WorkExperience from "../../components/WorkExperience";
 import Skills from "../../components/Skills";
 import Education from "../../components/education/Education";
 import Organization from "../../components/organization/Organization";
+import Profiles from "../../../public/profile/photo_2025-01-14_10-53-47.jpg";
+import SlideMarquee from "../../components/SlidesMarquee";
 
 const AboutArticleitems = () => {
     const ArticleWrapper = styled.div`
@@ -29,6 +31,9 @@ const AboutArticleitems = () => {
     const ArticleAboutinfo = styled.div`
         display: block;
         position: relative;
+        @media (1201px <= width) {
+            max-width: 900px;
+        }
     `;
 
     const ArticleHeading = styled.div`
@@ -58,11 +63,12 @@ const AboutArticleitems = () => {
 
     const MoveLink = styled.div`
         display: flex;
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
+        overflow-x: scroll;
         gap: 10px;
-        /* @media {
+        /* @media (240px <= width <= 320px) {
             font-size: 0.8em;
-            flex-direction: row;
+            flex-direction: column-reverse;
             margin: 0 0 30px;
         } */
         @media (1201px <= width) {
@@ -106,12 +112,20 @@ const AboutArticleitems = () => {
         display: block;
         position: relative;
     `;
-
+    const MarqueeWrapper = styled.div`
+        position: relative;
+        display: block;
+        overflow: hidden;
+        /* max-width: 200px; */
+    `;
+    const MarqueeContainer = styled.div`
+        // flex: 1 1 0;
+    `;
     return (
         <>
-            <div className="p-4 md:p-0 lg:p-0 xl:p-0">
+            <div className="md:p-0 lg:p-0 xl:p-0">
                 <ArticleWrapper>
-                    <div className="socialContainer">
+                    <div className="mt-40 socialContainer">
                         <div className="social__list">
                             <MoveLink className="relSocial__move">
                                 <Link
@@ -145,40 +159,64 @@ const AboutArticleitems = () => {
                         </div>
                     </div>
                     <ArticleAboutinfo>
-                        <ArticleHeading>
-                            <h2>Hello,</h2>
-                        </ArticleHeading>
-                        <ArticleAuthor className="py-2">
-                            <h2>I'm Gilang Ramadhan</h2>
-                        </ArticleAuthor>
-
-                        <ArticleContent className="leading-8">
-                            I'm a UI/UX designer and Frontend Web Developer with
-                            more than 2 years of experience. During my work as a
-                            Freelancer in the field of UI/UX design, I have
-                            helped increase and attract users to be able to
-                            access web pages by redesigning or creating UI and
-                            I'm also a Graphic Designer.
-                            <DownloadPorto className="my-10">
-                                <div className="flex cvLink__download ">
-                                    <Link
-                                        className="flex items-center gap-3 px-6 py-3 text-white duration-300 delay-150 bg-slate-400 hover:bg-slate-600 w-82 eas-in-out"
-                                        to={CVPortofolio}
-                                        download="Gilang Alfi Syahri Ramadhan - CV"
-                                        target="_blank"
-                                        rel="noreferrer"
-                                    >
-                                        <FaDownload className="text-2xl" />
-                                        Download My Resume
-                                    </Link>
+                        <div className="gap-10 bodyProfile">
+                            <div className="profilePic">
+                                <figure className="about__meFigure">
+                                    <LazyLoadImage
+                                        src={Profiles}
+                                        className="rounded-full pointer-events-none"
+                                    />
+                                </figure>
+                            </div>
+                            <div className="aboutInfo__items mt-11">
+                                <ArticleHeading>
+                                    <h2>Hello 👋</h2>
+                                </ArticleHeading>
+                                <ArticleAuthor className="py-1 xl:leading-[1em]">
+                                    <h2 className="font-semibold xl:text-[3.5rem] text-[2rem]">
+                                        I'm Gilang Ramadhan
+                                    </h2>
+                                </ArticleAuthor>
+                                <ArticleContent className="leading-8">
+                                    I'm a UI/UX designer and Frontend Web
+                                    Developer with more than 2 years of
+                                    experience. During my work as a Freelancer
+                                    in the field of UI/UX design, I have helped
+                                    increase and attract users to be able to
+                                    access web pages by redesigning or creating
+                                    UI and I'm also a Graphic Designer.
+                                </ArticleContent>
+                                <DownloadPorto className="my-10">
+                                    <div className="flex cvLink__download ">
+                                        <Link
+                                            className="flex items-center gap-3 px-6 py-3 text-white duration-300 delay-150 bg-slate-400 hover:bg-slate-600 w-82 eas-in-out"
+                                            to={CVPortofolio}
+                                            download="Gilang Alfi Syahri Ramadhan - CV"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
+                                            <FaDownload className="text-2xl" />
+                                            Download My Resume
+                                        </Link>
+                                    </div>
+                                </DownloadPorto>
+                            </div>
+                        </div>
+                        <MarqueeWrapper>
+                            <MarqueeContainer
+                                id="smooth-wrapper"
+                                className="marquee__listItem"
+                            >
+                                <div className="marquee__headText">
+                                    <SlideMarquee />
                                 </div>
-                            </DownloadPorto>
-                            <WorkExperience />
-                            <Skills />
-                            <Education />
-                            <Organization />
-                            {/* <p>Hold on, it's not stop in here❤️. Update Soon</p> */}
-                        </ArticleContent>
+                            </MarqueeContainer>
+                        </MarqueeWrapper>
+                        <WorkExperience />
+                        <Skills />
+                        <Education />
+                        <Organization />
+                        {/* <p>Hold on, it's not stop in here❤️. Update Soon</p> */}
                     </ArticleAboutinfo>
                 </ArticleWrapper>
             </div>

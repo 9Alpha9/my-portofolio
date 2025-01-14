@@ -2,7 +2,7 @@
 import React, { useEffect, useRef } from "react";
 import "../styles/aboutStyles.scss";
 import styled from "styled-components";
-import SlideMarquee from "../components/SlidesMarquee";
+
 import Profiles from "../../public/profile/profiles.jpg";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Helmet } from "react-helmet";
@@ -29,17 +29,8 @@ const AboutPages = () => {
         // margin: 14rem 0;
     `;
 
-    const MarqueeContainer = styled.div`
-        // flex: 1 1 0;
-    `;
     const AboutContentItem = styled.div`
         padding: 2rem 0;
-    `;
-
-    const MarqueeWrapper = styled.div`
-        position: relative;
-        display: block;
-        overflow: hidden;
     `;
 
     return (
@@ -54,19 +45,7 @@ const AboutPages = () => {
                             {/* <div className="about__headWrapper">
                                 <h1 className="text-center">About Me</h1>
                             </div> */}
-                            <figure className="m-4 about__meFigure">
-                                <LazyLoadImage src={Profiles} />
-                            </figure>
-                            <MarqueeWrapper>
-                                <MarqueeContainer
-                                    id="smooth-wrapper"
-                                    className="marquee__listItem"
-                                >
-                                    <div className="marquee__headText">
-                                        <SlideMarquee />
-                                    </div>
-                                </MarqueeContainer>
-                            </MarqueeWrapper>
+
                             <AboutContentItem>
                                 <div className="relative content">
                                     <AboutArticleitems />

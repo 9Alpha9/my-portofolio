@@ -64,6 +64,12 @@ const skillConnector = [
             "Adobe Illustrator is a tools for creating vector like logo, poster design, and illustator.",
         ability: "Hight Intermediate",
     },
+    {
+        title: "Next.Js",
+        id: "Next.Js",
+        description: "Today I'm still learning about Next.JS for projects",
+        ability: "Learning",
+    },
 ];
 
 export default function Skills() {
