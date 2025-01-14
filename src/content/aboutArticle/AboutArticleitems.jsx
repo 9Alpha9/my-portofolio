@@ -3,7 +3,7 @@ import React, { useEffect, useRef } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import styled from "styled-components";
 import "../../styles/aboutStyles.scss";
-import CVPortofolio from "../../assets/CV/Gilang_Alfi_Syahri_Ramadhan_Resume-UI_UX Designer.pdf";
+import CVPortofolio from "../../assets/CV/Gilang_Alfi_Syahri_Ramadhan_CV.pdf";
 import { Link } from "react-router-dom";
 import {
     FaDownload,
@@ -60,11 +60,11 @@ const AboutArticleitems = () => {
         display: flex;
         flex-wrap: wrap;
         gap: 10px;
-        @media {
+        /* @media {
             font-size: 0.8em;
             flex-direction: row;
             margin: 0 0 30px;
-        }
+        } */
         @media (1201px <= width) {
             flex-direction: column;
             font-size: 1em;
@@ -164,7 +164,7 @@ const AboutArticleitems = () => {
                                     <Link
                                         className="flex items-center gap-3 px-6 py-3 text-white duration-300 delay-150 bg-slate-400 hover:bg-slate-600 w-82 eas-in-out"
                                         to={CVPortofolio}
-                                        download="Gilang_Alfi_Syahri_Ramadhan_Resume-UI_UX Designer"
+                                        download="Gilang Alfi Syahri Ramadhan - CV"
                                         target="_blank"
                                         rel="noreferrer"
                                     >
