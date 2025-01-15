@@ -92,7 +92,7 @@ const AboutArticleitems = () => {
             content: "Github";
             position: absolute;
             bottom: 4em;
-            left: -2px;
+            left: -5.2px;
             padding: 6px;
             border-radius: 10%;
             display: flex;
