@@ -122,7 +122,7 @@ const AboutArticleitems = () => {
             content: "LinkedIn";
             position: absolute;
             bottom: 4em;
-            left: 2.1rem;
+            left: 2rem;
             display: flex;
             justify-content: center;
             margin: auto;
