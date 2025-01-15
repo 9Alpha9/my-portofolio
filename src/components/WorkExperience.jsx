@@ -43,41 +43,39 @@ function WorkExperience() {
                 <div className="col-span-1 work__container">
                     <section className="relative grid grid-cols-1 gap-3 my-5 xl:grid-cols-3 md:grid-cols-3 work__ExperienceList">
                         {experience.map((experience) => (
-                            <>
-                                <div className="relative flex flex-col justify-between p-3 overflow-hidden transition-all duration-200 border rounded-md shadow-md shadow-gray-200 work__ExperiencsItems border-slate-300 h-80">
-                                    <span className="absolute top-0 right-0 block p-2 text-white bg-gray-700 mask workNumb__">
-                                        {experience.number}
-                                    </span>
-                                    <div
-                                        className="top-0 work__ExperienceHeading"
-                                        key={experience.id}
-                                    >
-                                        <div className="flex flex-row gap-6 experienceGo__hd">
-                                            <span className="block text-sm">
-                                                {experience.date}
-                                            </span>
-                                            <span className="block text-sm uppercase">
-                                                {experience.label}
-                                            </span>
-                                        </div>
-                                        <h2 className="py-4 mt-5 leading-6 xl:text-md">
-                                            {experience.title}
-                                        </h2>
+                            <div
+                                className="relative flex flex-col justify-between p-3 overflow-hidden transition-all duration-200 border rounded-md shadow-md shadow-gray-200 work__ExperiencsItems border-slate-300 h-80"
+                                key={experience.id}
+                            >
+                                <span className="absolute top-0 right-0 block p-2 text-white bg-gray-700 mask workNumb__">
+                                    {experience.number}
+                                </span>
+                                <div className="top-0 work__ExperienceHeading">
+                                    <div className="flex flex-row gap-6 experienceGo__hd">
+                                        <span className="block text-sm">
+                                            {experience.date}
+                                        </span>
+                                        <span className="block text-sm uppercase">
+                                            {experience.label}
+                                        </span>
                                     </div>
-                                    <div className="work__ExperiencContent">
-                                        <p className="text-sm">
-                                            {experience.description}
-                                        </p>
-                                    </div>
-                                    <div className="link">
-                                        <Link to={experience.link}>
-                                            <span className="block w-full p-2 px-6 text-sm text-center text-white duration-500 ease-in-out bg-gray-700 rounded-md hover:bg-slate-500">
-                                                Lihat Portofolio
-                                            </span>
-                                        </Link>
-                                    </div>
+                                    <h2 className="py-4 mt-5 leading-6 xl:text-md">
+                                        {experience.title}
+                                    </h2>
                                 </div>
-                            </>
+                                <div className="work__ExperiencContent">
+                                    <p className="text-sm">
+                                        {experience.description}
+                                    </p>
+                                </div>
+                                <div className="link">
+                                    <Link to={experience.link}>
+                                        <span className="block w-full p-2 px-6 text-sm text-center text-white duration-500 ease-in-out bg-gray-700 rounded-md hover:bg-slate-500">
+                                            Lihat Portofolio
+                                        </span>
+                                    </Link>
+                                </div>
+                            </div>
                         ))}
                     </section>
                 </div>

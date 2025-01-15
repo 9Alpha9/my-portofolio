@@ -5,6 +5,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import MyFace from "../assets/img/MyFace.png";
 // import LandingPage from "../pages/LandingPage";
 import { Link } from "react-router-dom";
+import styles from "../styles/styles.nav.module.scss";
 
 const NavbarNav = styled.div`
     overflow: hidden;
@@ -17,8 +18,54 @@ const NavbarNav = styled.div`
 const Navbar = () => {
     return (
         <>
-            <NavbarNav>
-                <div className="nav">
+            <NavbarNav className="h-[5em] backdrop-blur-sm">
+                <div className={`${styles.nav} flex justify-center mt-3`}>
+                    <div
+                        className={`${styles.nav__wrapper} fixed p-2 bg-gradient-to-r to-indigo-500 from-black rounded-full m-auto px-5`}
+                    >
+                        <div
+                            className={`${styles.nav__items} flex justify-between items-center gap-10`}
+                        >
+                            <div className={`${styles.nav__logo}`}>
+                                <figure className={`${styles.logoimg}`}>
+                                    <LazyLoadImage
+                                        src={MyFace}
+                                        alt={"My Face Gilang Portofolio Logo"}
+                                    />
+                                </figure>
+                            </div>
+                            <div className={`${styles.nav__links}`}>
+                                <span className="relative gap-3">
+                                    <ul
+                                        className={`${styles.nav__link__wrapper}`}
+                                    >
+                                        <li
+                                            className={`${styles.nav__links__items}`}
+                                        >
+                                            <Link
+                                                to={"/"}
+                                                className={`${styles.linksCta}`}
+                                            >
+                                                About Me
+                                            </Link>
+                                        </li>
+                                        <li
+                                            className={`${styles.nav__links__items}`}
+                                        >
+                                            <Link
+                                                to={"/portfolio"}
+                                                className={`${styles.linksCta}`}
+                                            >
+                                                Portofolio
+                                            </Link>
+                                        </li>
+                                    </ul>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {/* <div className="nav">
                     <div className="flex flex-row items-center justify-between px-4 py-8 align-middle nav__item">
                         <div className="flex items-center gap-3 nav__logo">
                             <figure className="logo ">
@@ -57,7 +104,7 @@ const Navbar = () => {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </NavbarNav>
         </>
     );

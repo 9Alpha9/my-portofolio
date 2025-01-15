@@ -3,8 +3,8 @@ import React, { useEffect, useRef } from "react";
 import "../styles/aboutStyles.scss";
 import styled from "styled-components";
 
-import Profiles from "../../public/profile/profiles.jpg";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+// import Profiles from "../../public/profile/profiles.jpg";
+// import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Helmet } from "react-helmet";
 import SmoothScroll from "../components/LenisScroll";
 import AboutArticleitems from "../content/aboutArticle/AboutArticleitems";
@@ -17,7 +17,7 @@ const AboutPages = () => {
             align-items: center;
             justify-content: center;
             display: block;
-            padding: 2rem;
+            padding: 5rem 0;
         }
         @media (max-width: 768px) {
             // Change from "481px width <= 768px" to "max-width: 768px"

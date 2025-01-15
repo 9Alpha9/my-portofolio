@@ -11,7 +11,7 @@ import {
     FaSquareBehance,
     FaSquareGithub,
 } from "react-icons/fa6";
-import { motion, useAnimation, easeInOut } from "framer-motion";
+// import { motion, useAnimation, easeInOut } from "framer-motion";
 import WorkExperience from "../../components/WorkExperience";
 import Skills from "../../components/Skills";
 import Education from "../../components/education/Education";
@@ -23,7 +23,7 @@ const AboutArticleitems = () => {
     const ArticleWrapper = styled.div`
         margin: 20px;
         gap: 5%;
-        @media (1201px <= width) {
+        @media (min-width: 1201px) {
             display: flex;
             flex-direction: row-reverse;
         }
@@ -31,7 +31,8 @@ const AboutArticleitems = () => {
     const ArticleAboutinfo = styled.div`
         display: block;
         position: relative;
-        @media (1201px <= width) {
+        margin: auto;
+        @media (min-width: 1201px) {
             max-width: 900px;
         }
     `;
@@ -63,16 +64,16 @@ const AboutArticleitems = () => {
 
     const MoveLink = styled.div`
         display: flex;
-        /* flex-wrap: wrap; */
-        overflow-x: scroll;
-        gap: 10px;
+        // overflow-x: scroll;
+        gap: 4px;
+        position: relative;
         /* @media (240px <= width <= 320px) {
             font-size: 0.8em;
             flex-direction: column-reverse;
             margin: 0 0 30px;
         } */
-        @media (1201px <= width) {
-            flex-direction: column;
+        @media (min-width: 1201px) {
+            flex-direction: row;
             font-size: 1em;
         }
     `;
@@ -86,7 +87,28 @@ const AboutArticleitems = () => {
         color: #ffffff;
         &:hover {
             background-color: #313131;
-            border-radius: 12px;
+        }
+        &::before {
+            content: "Github";
+            position: absolute;
+            bottom: 4em;
+            left: -2px;
+            padding: 6px;
+            border-radius: 10%;
+            display: flex;
+            justify-content: center;
+            background-color: black;
+            opacity: 0;
+            transition: 0.3s ease;
+            font-size: 10px;
+            pointer-events: none;
+            cursor: default;
+            text-decoration: none;
+            color: white;
+            transition-delay: 0.3s;
+        }
+        &:hover::before {
+            opacity: 1;
         }
     `;
 
@@ -95,7 +117,31 @@ const AboutArticleitems = () => {
         color: #ffffff;
         &:hover {
             background-color: #005494;
-            border-radius: 12px;
+        }
+        &::before {
+            content: "LinkedIn";
+            position: absolute;
+            bottom: 4em;
+            left: 2.1rem;
+            display: flex;
+            justify-content: center;
+            margin: auto;
+            padding: 6px;
+            border-radius: 10%;
+            display: flex;
+            justify-content: center;
+            background-color: #00457a;
+            opacity: 0;
+            transition: 0.3s ease;
+            font-size: 10px;
+            pointer-events: none;
+            cursor: default;
+            text-decoration: none;
+            color: white;
+            transition-delay: 0.3s;
+        }
+        &:hover::before {
+            opacity: 1;
         }
     `;
 
@@ -104,7 +150,31 @@ const AboutArticleitems = () => {
         color: #ffffff;
         &:hover {
             background-color: rgb(6 74 204);
-            border-radius: 12px;
+        }
+        &::before {
+            content: "Behance";
+            position: absolute;
+            bottom: 4em;
+            right: -1em;
+            display: flex;
+            justify-content: center;
+            margin: auto;
+            padding: 6px;
+            border-radius: 10%;
+            display: flex;
+            justify-content: center;
+            background-color: #0057ff;
+            opacity: 0;
+            transition: 0.3s ease;
+            font-size: 10px;
+            pointer-events: none;
+            cursor: default;
+            text-decoration: none;
+            color: white;
+            transition-delay: 0.3s;
+        }
+        &:hover::before {
+            opacity: 1;
         }
     `;
 
@@ -125,7 +195,7 @@ const AboutArticleitems = () => {
         <>
             <div className="md:p-0 lg:p-0 xl:p-0">
                 <ArticleWrapper>
-                    <div className="mt-40 socialContainer">
+                    {/* <div className="mt-40 socialContainer">
                         <div className="social__list">
                             <MoveLink className="relSocial__move">
                                 <Link
@@ -157,7 +227,7 @@ const AboutArticleitems = () => {
                                 </Link>
                             </MoveLink>
                         </div>
-                    </div>
+                    </div> */}
                     <ArticleAboutinfo>
                         <div className="gap-10 bodyProfile">
                             <div className="profilePic">
@@ -167,6 +237,36 @@ const AboutArticleitems = () => {
                                         className="rounded-full pointer-events-none"
                                     />
                                 </figure>
+                                <div className="flex justify-center social__list">
+                                    <div className="socialContainer">
+                                        <MoveLink className="relSocial__move">
+                                            <Link
+                                                to="https://github.com/9Alpha9"
+                                                target="_blank"
+                                            >
+                                                <GithubMoverel__ className="flex items-center gap-2 px-2 py-2 duration-300 delay-150 rounded-full eas-in-out github__moveRel">
+                                                    <FaSquareGithub className="text-xl xl:text-xl" />
+                                                </GithubMoverel__>
+                                            </Link>
+                                            <Link
+                                                to="https://www.linkedin.com/in/gilang-ramaddhann/"
+                                                target="_blank"
+                                            >
+                                                <LinkedinMoverel__ className="flex items-center gap-2 px-2 py-2 duration-300 delay-150 rounded-full eas-in-out linkedin__moreRel">
+                                                    <FaLinkedin className="text-xl xl:text-xl" />
+                                                </LinkedinMoverel__>
+                                            </Link>
+                                            <Link
+                                                to="https://www.behance.net/joeys-ui"
+                                                target="_blank"
+                                            >
+                                                <BehanceMoverel__ className="flex items-center gap-2 px-2 py-2 duration-300 delay-150 rounded-full eas-in-out behance__moreRel">
+                                                    <FaSquareBehance className="text-xl xl:text-xl" />
+                                                </BehanceMoverel__>
+                                            </Link>
+                                        </MoveLink>
+                                    </div>
+                                </div>
                             </div>
                             <div className="aboutInfo__items mt-11">
                                 <ArticleHeading>

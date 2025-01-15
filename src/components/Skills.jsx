@@ -5,7 +5,7 @@ const skillConnector = [
         title: "Tailwind Css",
         id: "tailwind-css",
         description:
-            "Tailwind Css is a powerfull css library for creating a styles component. In Tailwind Css you can customize your own style like color, with, height, responsive style, and more.",
+            "Tailwind Css is a powerful css library for creating a styles component. In Tailwind Css you can customize your own style like color, with, height, responsive style, and more.",
         ability: "Intermediate",
     },
     {
@@ -20,7 +20,7 @@ const skillConnector = [
         id: "css",
         description:
             "CSS is one way to organize the layout of the components of a website which makes the appearance of a website more attractive and structured.",
-        ability: "Hight Intermediate",
+        ability: "High Intermediate",
     },
     {
         title: "SCSS/SASS",
@@ -88,24 +88,25 @@ export default function Skills() {
                 </span>
                 <section className="my-5 skillWrapper__inner">
                     <div className="grid grid-cols-1 gap-3 md:grid-cols-2 xl:grid-cols-2">
-                        {skillConnector.map((skillConnector) => (
-                            <>
-                                <div className="grid justify-between grid-cols-1 gap-3 p-4 border rounded-md skillItems border-slate-300">
-                                    <span className="block text-xl">
-                                        <h2>{skillConnector.title}</h2>
-                                        <p className="w-full py-2 text-sm">
-                                            {skillConnector.description}
-                                        </p>
-                                    </span>
-                                    {/* <div className="flex flex-col w-full align-middle skillItems__dot">
-                                        <div className="relative flex flex-row gap-3 py-3 indicators">
-                                            <span className="block p-1.5 px-4 text-sm font-thin text-white uppercase bg-gray-700 rounded-sm">
-                                                {skillConnector.ability}
-                                            </span>
-                                        </div>
-                                    </div> */}
-                                </div>
-                            </>
+                        {skillConnector.map((skill) => (
+                            <div
+                                key={skill.id}
+                                className="grid justify-between grid-cols-1 gap-3 p-4 border rounded-md skillItems border-slate-300"
+                            >
+                                <span className="block text-xl">
+                                    <h2>{skill.title}</h2>
+                                    <p className="w-full py-2 text-sm">
+                                        {skill.description}
+                                    </p>
+                                </span>
+                                {/* <div className="flex flex-col w-full align-middle skillItems__dot">
+                                    <div className="relative flex flex-row gap-3 py-3 indicators">
+                                        <span className="block p-1.5 px-4 text-sm font-thin text-white uppercase bg-gray-700 rounded-sm">
+                                            {skill.ability}
+                                        </span>
+                                    </div>
+                                </div> */}
+                            </div>
                         ))}
                     </div>
                 </section>
