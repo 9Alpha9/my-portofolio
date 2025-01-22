@@ -1,26 +1,25 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import styles from "../components/styles/global.styles.module.scss";
-import KinayaThumbnail from "../../public/img/KinayaRenderMac.png";
-import KinayaMockup from "../../public/img/MockKinaya.png";
-import KinayaLogo from "../../public/img/KinayaLogo.jpg";
-import KinayaLoader from "../../public/img/KinayaSlider.jpg";
-import KinayaConcept2 from "../../public/img/kinayaConcept_2.png";
-import KinayaConcept3 from "../../public/img/kinayaConcept_3.png";
-import WireframeKinaya from "../../public/img/WireframeKinaya.png";
-import KinayaFrame from "../../public/img/KinayaFrame.png";
+import KinayaThumbnail from "../assets/img/KinayaRenderMac.png";
+import KinayaMockup from "../assets/img/MockKinaya.png";
+import KinayaLogo from "../assets/img/KinayaLogo.jpg";
+import KinayaLoader from "../assets/img/KinayaSlider.jpg";
+import KinayaConcept2 from "../assets/img/kinayaConcept_2.png";
+import KinayaConcept3 from "../assets/img/kinayaConcept_3.png";
+import WireframeKinaya from "../assets/img/WireframeKinaya.png";
+import KinayaFrame from "../assets/img/KinayaFrame.png";
 import SmoothScroll from "../SmoothScroll";
-import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
 function KinayaPages() {
     return (
         <>
-            <Helmet>
-                <title>Kinaya Interior Design</title>
-            </Helmet>
             <SmoothScroll>
+                <Helmet>
+                    <title>Kinaya Interior Design</title>
+                </Helmet>
                 <div className={`${styles.container}`}>
                     <div className="text-gray-950">
                         <span className={`${styles.headingTitle}`}>

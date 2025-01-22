@@ -1,13 +1,13 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import styles from "../components/styles/global.styles.module.scss";
-import LenteraThumbnail from "../../public/img/LenteraMockMac.png";
-import LenteraShowcase1 from "../../public/img/LenteraShowcase1.jpg";
-import LenteraShowcase2 from "../../public/img/12ColumnLentera.png";
-import WireframeLentera2 from "../../public/img/LenteraMoc3.png";
-import WireframeLentera1 from "../../public/img/WireframeLentera.png";
-import LenteraMocs from "../../public/img/MockLentera.png";
-import LenteraPallete from "../../public/img/colorPalletLentera.png";
+import LenteraThumbnail from "../assets/img/LenteraMockMac.png";
+import LenteraShowcase1 from "../assets/img/LenteraShowcase1.jpg";
+import LenteraShowcase2 from "../assets/img/12ColumnLentera.png";
+import WireframeLentera2 from "../assets/img/LenteraMoc3.png";
+import WireframeLentera1 from "../assets/img/WireframeLentera.png";
+import LenteraMocs from "../assets/img/MockLentera.png";
+import LenteraPallete from "../assets/img/colorPalletLentera.png";
 import SmoothScroll from "../components/LenisScroll";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";

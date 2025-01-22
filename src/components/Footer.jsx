@@ -13,7 +13,7 @@ function Footer() {
         max-width: 1000px;
         margin: 0 auto;
         justify-content: center;
-        item-align: center;
+        align-items: center;
         padding: 2rem 0 2rem;
 
         @media (2px <= width <=319px) {

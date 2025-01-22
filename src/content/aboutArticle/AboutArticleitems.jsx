@@ -3,7 +3,7 @@ import React, { useEffect, useRef } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import styled from "styled-components";
 import "../../styles/aboutStyles.scss";
-import CVPortofolio from "../../assets/CV/Gilang_Alfi_Syahri_Ramadhan_CV.pdf";
+import CVPortofolio from "../../assets/CV/Gilang_Alfi_Syahri_Ramadhan-CV.pdf";
 import { Link } from "react-router-dom";
 import {
     FaDownload,
@@ -16,7 +16,7 @@ import WorkExperience from "../../components/WorkExperience";
 import Skills from "../../components/Skills";
 import Education from "../../components/education/Education";
 import Organization from "../../components/organization/Organization";
-import Profiles from "../../../public/profile/photo_2025-01-14_10-53-47.jpg";
+import Profiles from "../../assets/img/profile/photo_2025-01-14_10-53-47.jpg";
 import SlideMarquee from "../../components/SlidesMarquee";
 
 const AboutArticleitems = () => {

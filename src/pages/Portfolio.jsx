@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../components/styles/portfolio.styles.module.scss";
-import LenteraThumbnail from "../../public/img/LenteraMoc2.png";
-import KinayaThumbnail from "../../public/img/KinayaRenderMac.png";
+import LenteraThumbnail from "../assets/img/LenteraMoc2.png";
+import KinayaThumbnail from "../assets/img/KinayaRenderMac.png";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import SmoothScroll from "../components/LenisScroll";

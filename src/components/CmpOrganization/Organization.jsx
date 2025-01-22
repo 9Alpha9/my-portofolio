@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./styles.module.scss";
-import BagianLogo from "../../../public/img/bagianLogo.png";
+import BagianLogo from "../assets/img/bagianLogo.png";
 
 function Organization() {
     const OrganizationMap = [
