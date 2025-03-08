@@ -3,7 +3,8 @@ import React, { useEffect, useRef } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import styled from "styled-components";
 import "../../styles/aboutStyles.scss";
-import CVPortofolio from "../../assets/CV/Gilang_Alfi_Syahri_Ramadhan-CV.pdf";
+import CVPortofolio from "../../assets/CV/Gilang Alfi Syahri Ramadhan-resume.pdf";
+import Portofolio from "../../assets/Portofolio/Portfolio Web Design - Gilang Alfi Syahri Ramadhan.pdf";
 import { Link } from "react-router-dom";
 import {
     FaDownload,
@@ -280,27 +281,43 @@ const AboutArticleitems = () => {
                                         I'm Gilang Ramadhan
                                     </h2>
                                 </ArticleAuthor>
-                                <ArticleContent className="py-8 leading-8">
-                                    Fresh Graduate from Dinamika University
-                                    (Stikom Surabaya), and I'm a UI/UX designer
-                                    and Frontend Web Developer with more than 2
-                                    years of experience. During my work as a
-                                    Freelancer in the field of UI/UX design, I
-                                    have helped increase and attract users to be
-                                    able to access web pages by redesigning or
-                                    creating UI and I'm also a Graphic Designer.
+                                <ArticleContent className="py-8 leading-8 text-justify">
+                                    Lulusan Universitas Dinamika (STIKOM
+                                    Surabaya) UX/ UI Designer dengan latar
+                                    belakang Sistem Informasi, berpengalaman
+                                    dalam merancanng antarmuka pengguna yang
+                                    intuitif dan menarik. Bersemangat untuk
+                                    menciptakan pengalaman pengguna yang
+                                    memuaskan melalui riset yang mendalam,
+                                    prototyping, dan melakukan uji kegunaan.
+                                    Memiliki keahlian dalam berbagai alat
+                                    desain, mengelola proyek desain dari ide
+                                    hingga eksekusi dan kemampuan berkolaborasi
+                                    yang kuat dengan tim lintas fungsional.
                                 </ArticleContent>
-                                <DownloadPorto className="my-10">
-                                    <div className="flex cvLink__download ">
+                                <DownloadPorto className="gap-8 my-10 xl:flex fle-col">
+                                    <div className="flex pt-4 cvLink__download">
                                         <Link
-                                            className="flex items-center gap-3 px-6 py-3 text-white duration-300 delay-150 bg-slate-400 hover:bg-slate-600 w-82 eas-in-out"
+                                            className="flex w-[18rem] justify-center gap-3 px-6 py-3 text-white duration-300 delay-150 rounded-full bg-slate-400 hover:bg-slate-600 w-82 eas-in-out"
                                             to={CVPortofolio}
                                             download="Gilang Alfi Syahri Ramadhan - CV"
                                             target="_blank"
                                             rel="noreferrer"
                                         >
+                                            <FaDownload className="text-2xl " />
+                                            Download CV
+                                        </Link>
+                                    </div>
+                                    <div className="flex pt-4 cvLink__download">
+                                        <Link
+                                            className="flex w-[18rem] justify-center gap-3 px-6 py-3 text-white duration-300 delay-150 bg-blue-900 rounded-full hover:bg-blue-600 w-82 eas-in-out"
+                                            to={Portofolio}
+                                            download="Gilang Alfi Syahri Ramadhan - Portofolio Of UI/UX Designer & Graphic Designer"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
                                             <FaDownload className="text-2xl" />
-                                            Download My Resume
+                                            Download Portofolio
                                         </Link>
                                     </div>
                                 </DownloadPorto>

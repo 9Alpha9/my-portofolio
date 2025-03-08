@@ -93,12 +93,12 @@ export default function MarqueeText() {
                                             {" "}
                                             <StarsWhite />
                                         </li>
-                                        <li>React Js</li>
+                                        <li>Wireframing</li>
                                         <li>
                                             {" "}
                                             <StarsWhite />
                                         </li>
-                                        <li>Sass</li>
+                                        <li>Prototyping</li>
                                         <li>
                                             {" "}
                                             <StarsWhite />
@@ -132,12 +132,12 @@ export default function MarqueeText() {
                                             {" "}
                                             <StarsWhite />
                                         </li>
-                                        <li>React Js</li>
+                                        <li>Wireframing</li>
                                         <li>
                                             {" "}
                                             <StarsWhite />
                                         </li>
-                                        <li>Sass</li>
+                                        <li>Prototyping</li>
                                         <li>
                                             {" "}
                                             <StarsWhite />
@@ -171,12 +171,12 @@ export default function MarqueeText() {
                                             {" "}
                                             <StarsWhite />
                                         </li>
-                                        <li>React Js</li>
+                                        <li>Wireframing</li>
                                         <li>
                                             {" "}
                                             <StarsWhite />
                                         </li>
-                                        <li>Sass</li>
+                                        <li>Prototyping</li>
                                         <li>
                                             {" "}
                                             <StarsWhite />
@@ -215,51 +215,12 @@ export default function MarqueeText() {
                                             {" "}
                                             <StarsWhite />
                                         </li>
-                                        <li>React Js</li>
+                                        <li>Wireframing</li>
                                         <li>
                                             {" "}
                                             <StarsWhite />
                                         </li>
-                                        <li>Sass</li>
-                                        <li>
-                                            {" "}
-                                            <StarsWhite />
-                                        </li>
-                                        <li>Css</li>
-                                        <li>
-                                            {" "}
-                                            <StarsWhite />
-                                        </li>
-                                        <li>Figma</li>
-                                        <li>
-                                            {" "}
-                                            <StarsWhite />
-                                        </li>
-                                        <li>Tailwind Css</li>
-                                    </ul>
-                                </span>
-                                <span className="flex gap-8">
-                                    <ul className="flex flex-row items-center gap-8">
-                                        <li>
-                                            {" "}
-                                            <StarsWhite />
-                                        </li>
-                                        <li>Let&apos;s Talk</li>
-                                        <li>
-                                            {" "}
-                                            <StarsWhite />
-                                        </li>
-                                        <li>UI/UX</li>
-                                        <li>
-                                            {" "}
-                                            <StarsWhite />
-                                        </li>
-                                        <li>React Js</li>
-                                        <li>
-                                            {" "}
-                                            <StarsWhite />
-                                        </li>
-                                        <li>Sass</li>
+                                        <li>Prototyping</li>
                                         <li>
                                             {" "}
                                             <StarsWhite />
@@ -293,12 +254,51 @@ export default function MarqueeText() {
                                             {" "}
                                             <StarsWhite />
                                         </li>
-                                        <li>React Js</li>
+                                        <li>Wireframing</li>
                                         <li>
                                             {" "}
                                             <StarsWhite />
                                         </li>
-                                        <li>Sass</li>
+                                        <li>Prototyping</li>
+                                        <li>
+                                            {" "}
+                                            <StarsWhite />
+                                        </li>
+                                        <li>Css</li>
+                                        <li>
+                                            {" "}
+                                            <StarsWhite />
+                                        </li>
+                                        <li>Figma</li>
+                                        <li>
+                                            {" "}
+                                            <StarsWhite />
+                                        </li>
+                                        <li>Tailwind Css</li>
+                                    </ul>
+                                </span>
+                                <span className="flex gap-8">
+                                    <ul className="flex flex-row items-center gap-8">
+                                        <li>
+                                            {" "}
+                                            <StarsWhite />
+                                        </li>
+                                        <li>Let&apos;s Talk</li>
+                                        <li>
+                                            {" "}
+                                            <StarsWhite />
+                                        </li>
+                                        <li>UI/UX</li>
+                                        <li>
+                                            {" "}
+                                            <StarsWhite />
+                                        </li>
+                                        <li>Wireframing</li>
+                                        <li>
+                                            {" "}
+                                            <StarsWhite />
+                                        </li>
+                                        <li>Prototyping</li>
                                         <li>
                                             {" "}
                                             <StarsWhite />

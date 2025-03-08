@@ -1,20 +1,20 @@
 import React from "react";
 
 const skillConnector = [
-    {
-        title: "Tailwind Css",
-        id: "tailwind-css",
-        description:
-            "Tailwind Css is a powerful css library for creating a styles component. In Tailwind Css you can customize your own style like color, with, height, responsive style, and more.",
-        ability: "Intermediate",
-    },
-    {
-        title: "React JS",
-        id: "react-js",
-        description:
-            "React Js is a library for frontend web, the stage of creating a website using React JS is very good because it can incorporate several other libraries that support it.",
-        ability: "Intermediate",
-    },
+    // {
+    //     title: "Tailwind Css",
+    //     id: "tailwind-css",
+    //     description:
+    //         "Tailwind Css is a powerful css library for creating a styles component. In Tailwind Css you can customize your own style like color, with, height, responsive style, and more.",
+    //     ability: "Intermediate",
+    // },
+    // {
+    //     title: "React JS",
+    //     id: "react-js",
+    //     description:
+    //         "React Js is a library for frontend web, the stage of creating a website using React JS is very good because it can incorporate several other libraries that support it.",
+    //     ability: "Intermediate",
+    // },
     {
         title: "CSS",
         id: "css",
@@ -30,19 +30,33 @@ const skillConnector = [
         ability: "Hight Intermediate",
     },
     {
+        title: "Wireframing",
+        id: "Wireframing",
+        description:
+            "A wireframe is a two-dimensional skeletal outline of a webpage or app. Wireframes provide a clear overview of the page structure, layout, information architecture, user flow, functionality, and intended behaviors. Styling, color, graphics, and other design elements are kept to a minimum.",
+        ability: "Hight Intermediate",
+    },
+    {
+        title: "Prototyping",
+        id: "Prototyping",
+        description:
+            "Prototyping is a demonstrates a product's design and functionality to stakeholders, clients, and potential users.",
+        ability: "Hight Intermediate",
+    },
+    {
         title: "HTML 5",
         id: "HTML-5",
         description:
             "A programming language used to build a website structure that will be displayed on website pages, usually assisted by other programming languages such as Css and Javascript.",
         ability: "Hight Intermediate",
     },
-    {
-        title: "Javascript",
-        id: "Javascript",
-        description:
-            "A programming used to create a website will be more interactive, such as the use of animation for certain website pages.",
-        ability: "Medium",
-    },
+    // {
+    //     title: "Javascript",
+    //     id: "Javascript",
+    //     description:
+    //         "A programming used to create a website will be more interactive, such as the use of animation for certain website pages.",
+    //     ability: "Medium",
+    // },
     {
         title: "Figma",
         id: "figma",
@@ -71,12 +85,12 @@ const skillConnector = [
             "Mostly I'm used it after the program finish for creating a manual book for how to setup the program.",
         ability: "Hight Intermediate",
     },
-    {
-        title: "Next.Js",
-        id: "Next.Js",
-        description: "Today I'm still learning about Next.JS.",
-        ability: "Learning",
-    },
+    // {
+    //     title: "Next.Js",
+    //     id: "Next.Js",
+    //     description: "Today I'm still learning about Next.JS.",
+    //     ability: "Learning",
+    // },
 ];
 
 export default function Skills() {
