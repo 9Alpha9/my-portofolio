@@ -10,10 +10,10 @@ function Organization() {
             id: "Undika",
             description:
                 "Freelancer Organization with an IT background such as web development to assist companies in setting up the UI and UX appearance.",
-            date: "2019 - Presents",
+            date: "2022 - Presents",
             label: "UI/UX & Frontend Web",
             image: BagianLogo,
-            link: "https://www.bagian.net/tentang-kami",
+            link: "https://www.bagian.web.id/tentang-kami",
         },
     ];
     return (
@@ -39,16 +39,18 @@ function Organization() {
                                             <img
                                                 src={organization.image}
                                                 alt=""
-                                                className="object-cover w-[35px] h-[35px]"
+                                                className="object-cover w-[40px] rounded-full"
                                             />
                                         </picture>
                                     </span>
-                                    <span className="block text-sm">
-                                        {organization.date}
-                                    </span>
-                                    <span className="block text-sm uppercase">
-                                        {organization.label}
-                                    </span>
+                                    <div className="flex flex-row items-center justify-between w-full pt-3 xl:pt-0">
+                                        <span className="block text-sm">
+                                            {organization.date}
+                                        </span>
+                                        <span className="block text-sm uppercase">
+                                            {organization.label}
+                                        </span>
+                                    </div>
                                 </div>
                                 <h2 className="py-4 mt-5 leading-6 xl:text-md">
                                     {organization.title}

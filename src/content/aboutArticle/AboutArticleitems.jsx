@@ -3,7 +3,7 @@ import React, { useEffect, useRef } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import styled from "styled-components";
 import "../../styles/aboutStyles.scss";
-import CVPortofolio from "../../assets/CV/Gilang Alfi Syahri Ramadhan-resume.pdf";
+import CVPortofolio from "../../assets/CV/Gilang_Alfi_Syahri_Ramadhan-_-CV_UI_UX_Designer_2025.pdf";
 import Portofolio from "../../assets/Portofolio/Portfolio Web Design - Gilang Alfi Syahri Ramadhan.pdf";
 import { Link } from "react-router-dom";
 import {
@@ -17,7 +17,7 @@ import WorkExperience from "../../components/WorkExperience";
 import Skills from "../../components/Skills";
 import Education from "../../components/education/Education";
 import Organization from "../../components/organization/Organization";
-import Profiles from "../../assets/img/profile/photo_2025-01-14_10-53-47.jpg";
+import Profiles from "../../assets/img/profile/photo-pictures-2025.png";
 import SlideMarquee from "../../components/SlidesMarquee";
 
 const AboutArticleitems = () => {
@@ -232,13 +232,15 @@ const AboutArticleitems = () => {
                     <ArticleAboutinfo>
                         <div className="gap-10 bodyProfile">
                             <div className="profilePic">
-                                <figure className="about__meFigure">
-                                    <LazyLoadImage
-                                        src={Profiles}
-                                        className="rounded-full pointer-events-none"
-                                    />
-                                </figure>
-                                <div className="flex justify-center social__list">
+                                <div className="mt-[4rem] outline outline-[10px] outline-stone-400/20 rounded-full">
+                                    <figure className="w-48 h-48 overflow-hidden rounded-full about__meFigure">
+                                        <LazyLoadImage
+                                            src={Profiles}
+                                            className="transform scale-150 rounded-full pointer-events-none"
+                                        />
+                                    </figure>
+                                </div>
+                                <div className="flex justify-center mt-10 social__list">
                                     <div className="socialContainer">
                                         <MoveLink className="relSocial__move">
                                             <Link
@@ -282,23 +284,27 @@ const AboutArticleitems = () => {
                                     </h2>
                                 </ArticleAuthor>
                                 <ArticleContent className="py-8 leading-8 text-justify">
-                                    Lulusan Universitas Dinamika (STIKOM
-                                    Surabaya) UX/ UI Designer dengan latar
-                                    belakang Sistem Informasi, berpengalaman
-                                    dalam merancanng antarmuka pengguna yang
-                                    intuitif dan menarik. Bersemangat untuk
-                                    menciptakan pengalaman pengguna yang
-                                    memuaskan melalui riset yang mendalam,
-                                    prototyping, dan melakukan uji kegunaan.
-                                    Memiliki keahlian dalam berbagai alat
-                                    desain, mengelola proyek desain dari ide
-                                    hingga eksekusi dan kemampuan berkolaborasi
-                                    yang kuat dengan tim lintas fungsional.
+                                    Alumni Universitas Dinamika dengan
+                                    spesialisasi UX/UI Designer, saya menonjol
+                                    dalam mengembangkan antarmuka pengguna yang
+                                    intuitif dan estetis berkat keahlian dalam
+                                    Sistem Informasi dan pengalaman yang luas.
+                                    Keahlian ini didukung oleh kemampuan riset
+                                    mendalam, prototyping yang teliti, dan uji
+                                    pengguna yang komprehensif untuk menjamin
+                                    pengalaman pengguna yang unggul. Saya mahir
+                                    dalam penggunaan alat- alat desain terkini
+                                    dan memiliki kecakapan dalam mengelola
+                                    proyek desain dari awal hingga akhir. Saya
+                                    juga efektif dalam bekerja sama dengan tim
+                                    lintas fungsional, selalu berkomitmen untuk
+                                    menyajikan solusi desain yang inovatif dan
+                                    berfokus pada hasil yang konkret.
                                 </ArticleContent>
                                 <DownloadPorto className="gap-8 my-10 xl:flex fle-col">
                                     <div className="flex pt-4 cvLink__download">
                                         <Link
-                                            className="flex w-[18rem] justify-center gap-3 px-6 py-3 text-white duration-300 delay-150 rounded-full bg-slate-400 hover:bg-slate-600 w-82 eas-in-out"
+                                            className="flex justify-center w-full gap-3 px-6 py-3 text-white duration-300 delay-150 rounded-full bg-stone-600 hover:bg-stone-700 w-82 eas-in-out"
                                             to={CVPortofolio}
                                             download="Gilang Alfi Syahri Ramadhan - CV"
                                             target="_blank"
@@ -310,7 +316,7 @@ const AboutArticleitems = () => {
                                     </div>
                                     <div className="flex pt-4 cvLink__download">
                                         <Link
-                                            className="flex w-[18rem] justify-center gap-3 px-6 py-3 text-white duration-300 delay-150 bg-blue-900 rounded-full hover:bg-blue-600 w-82 eas-in-out"
+                                            className="flex justify-center w-full gap-3 px-6 py-3 text-white duration-300 delay-150 bg-blue-900 rounded-full hover:bg-blue-600 w-82 eas-in-out"
                                             to={Portofolio}
                                             download="Gilang Alfi Syahri Ramadhan - Portofolio Of UI/UX Designer & Graphic Designer"
                                             target="_blank"
