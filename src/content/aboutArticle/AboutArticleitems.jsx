@@ -3,8 +3,9 @@ import React, { useEffect, useRef } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import styled from "styled-components";
 import "../../styles/aboutStyles.scss";
-import CVPortofolio from "../../assets/CV/Gilang_Alfi_Syahri_Ramadhan-_-CV_UI_UX_Designer_2025.pdf";
-import Portofolio from "../../assets/Portofolio/Portfolio Web Design - Gilang Alfi Syahri Ramadhan.pdf";
+import CVPortofolio from "../../assets/CV/Gilang_Alfi_Syahri_Ramadhan-CV.pdf";
+import Resume from "../../assets/Resume/Gilang_Alfi_Syahri_Ramadhan-Resume.pdf";
+import Portofolio from "../../assets/Portofolio/Gilang_Alfi_Syahri_Ramadhan-Portofolios.pdf";
 import { Link } from "react-router-dom";
 import {
     FaDownload,
@@ -12,7 +13,6 @@ import {
     FaSquareBehance,
     FaSquareGithub,
 } from "react-icons/fa6";
-// import { motion, useAnimation, easeInOut } from "framer-motion";
 import WorkExperience from "../../components/WorkExperience";
 import Skills from "../../components/Skills";
 import Education from "../../components/education/Education";
@@ -65,14 +65,8 @@ const AboutArticleitems = () => {
 
     const MoveLink = styled.div`
         display: flex;
-        // overflow-x: scroll;
         gap: 4px;
         position: relative;
-        /* @media (240px <= width <= 320px) {
-            font-size: 0.8em;
-            flex-direction: column-reverse;
-            margin: 0 0 30px;
-        } */
         @media (min-width: 1201px) {
             flex-direction: row;
             font-size: 1em;
@@ -187,7 +181,6 @@ const AboutArticleitems = () => {
         position: relative;
         display: block;
         overflow: hidden;
-        /* max-width: 200px; */
     `;
     const MarqueeContainer = styled.div`
         // flex: 1 1 0;
@@ -196,39 +189,6 @@ const AboutArticleitems = () => {
         <>
             <div className="md:p-0 lg:p-0 xl:p-0">
                 <ArticleWrapper>
-                    {/* <div className="mt-40 socialContainer">
-                        <div className="social__list">
-                            <MoveLink className="relSocial__move">
-                                <Link
-                                    to="https://github.com/9Alpha9"
-                                    target="_blank"
-                                >
-                                    <GithubMoverel__ className="flex items-center gap-3 p-3 px-10 text-center duration-300 delay-150 eas-in-out github__moveRel">
-                                        <FaSquareGithub className="text-lg xl:text-2xl" />{" "}
-                                        Github
-                                    </GithubMoverel__>
-                                </Link>
-                                <Link
-                                    to="https://www.linkedin.com/in/gilang-ramaddhann/"
-                                    target="_blank"
-                                >
-                                    <LinkedinMoverel__ className="flex items-center gap-3 p-3 px-10 text-center duration-300 delay-150 eas-in-out linkedin__moreRel">
-                                        <FaLinkedin className="text-lg xl:text-2xl" />{" "}
-                                        Linkedin
-                                    </LinkedinMoverel__>
-                                </Link>
-                                <Link
-                                    to="https://www.behance.net/joeys-ui"
-                                    target="_blank"
-                                >
-                                    <BehanceMoverel__ className="flex items-center gap-3 p-3 px-10 text-center duration-300 delay-150 eas-in-out behance__moreRel">
-                                        <FaSquareBehance className="text-lg xl:text-2xl" />{" "}
-                                        Behance
-                                    </BehanceMoverel__>
-                                </Link>
-                            </MoveLink>
-                        </div>
-                    </div> */}
                     <ArticleAboutinfo>
                         <div className="gap-10 bodyProfile">
                             <div className="profilePic">
@@ -301,22 +261,34 @@ const AboutArticleitems = () => {
                                     menyajikan solusi desain yang inovatif dan
                                     berfokus pada hasil yang konkret.
                                 </ArticleContent>
-                                <DownloadPorto className="gap-8 my-10 xl:flex fle-col">
-                                    <div className="flex pt-4 cvLink__download">
+                                <DownloadPorto className="gap-2 my-10 xl:flex fle-col">
+                                    <div className="flex w-full pt-4 cvLink__download">
                                         <Link
-                                            className="flex justify-center w-full gap-3 px-6 py-3 text-white duration-300 delay-150 rounded-full bg-stone-600 hover:bg-stone-700 w-82 eas-in-out"
+                                            className="flex justify-center w-full gap-3 px-6 py-3 text-white duration-300 delay-150 rounded-full bg-stone-600 hover:bg-stone-700 w-82 eas-in-out whitespace-nowrap"
                                             to={CVPortofolio}
                                             download="Gilang Alfi Syahri Ramadhan - CV"
                                             target="_blank"
                                             rel="noreferrer"
                                         >
-                                            <FaDownload className="text-2xl " />
+                                            <FaDownload className="text-2xl" />
                                             Download CV
                                         </Link>
                                     </div>
-                                    <div className="flex pt-4 cvLink__download">
+                                    <div className="flex w-full pt-4 cvLink__download">
                                         <Link
-                                            className="flex justify-center w-full gap-3 px-6 py-3 text-white duration-300 delay-150 bg-blue-900 rounded-full hover:bg-blue-600 w-82 eas-in-out"
+                                            className="flex justify-center w-full gap-3 px-6 py-3 text-gray-900 duration-300 delay-150 border border-red-900 rounded-full hover:text-white hover:bg-red-900 w-82 eas-in-out whitespace-nowrap"
+                                            to={Resume}
+                                            download="Gilang Alfi Syahri Ramadhan - Portofolio Of UI/UX Designer & Graphic Designer"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
+                                            <FaDownload className="text-2xl" />
+                                            Download Resume
+                                        </Link>
+                                    </div>
+                                    <div className="flex w-full pt-4 cvLink__download">
+                                        <Link
+                                            className="flex justify-center w-full gap-3 px-6 py-3 text-gray-900 duration-300 delay-150 border border-blue-900 rounded-full hover:text-white hover:bg-blue-600 w-82 eas-in-out whitespace-nowrap"
                                             to={Portofolio}
                                             download="Gilang Alfi Syahri Ramadhan - Portofolio Of UI/UX Designer & Graphic Designer"
                                             target="_blank"
@@ -343,7 +315,6 @@ const AboutArticleitems = () => {
                         <Skills />
                         <Education />
                         <Organization />
-                        {/* <p>Hold on, it's not stop in here❤️. Update Soon</p> */}
                     </ArticleAboutinfo>
                 </ArticleWrapper>
             </div>
