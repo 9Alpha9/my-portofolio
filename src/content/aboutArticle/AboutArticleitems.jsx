@@ -6,7 +6,7 @@ import "../../styles/aboutStyles.scss";
 import CVPortofolio from "../../assets/CV/Gilang_Alfi_Syahri_Ramadhan-CV.pdf";
 import Resume from "../../assets/Resume/Gilang_Alfi_Syahri_Ramadhan-Resume.pdf";
 // import Portofolio from "../../assets/Portofolio/Gilang_Alfi_Syahri_Ramadhan-Portofolios.pdf";
-import Portofolio from "../../assets/Portofolio/Gilang_Ramadhan_Portofolio_2026.pdf";
+import Portofolio from "../../assets/Portofolio/Gilang_Ramadhan_Portofolio_2026_new.pdf";
 import { Link } from "react-router-dom";
 import {
     FaDownload,
