@@ -5,7 +5,8 @@ import styled from "styled-components";
 import "../../styles/aboutStyles.scss";
 import CVPortofolio from "../../assets/CV/Gilang_Alfi_Syahri_Ramadhan-CV.pdf";
 import Resume from "../../assets/Resume/Gilang_Alfi_Syahri_Ramadhan-Resume.pdf";
-import Portofolio from "../../assets/Portofolio/Gilang_Alfi_Syahri_Ramadhan-Portofolios.pdf";
+// import Portofolio from "../../assets/Portofolio/Gilang_Alfi_Syahri_Ramadhan-Portofolios.pdf";
+import Portofolio from "../../assets/Portofolio/Gilang_Ramadhan_Portofolio_2026.pdf";
 import { Link } from "react-router-dom";
 import {
     FaDownload,
@@ -278,7 +279,7 @@ const AboutArticleitems = () => {
                                         <Link
                                             className="flex justify-center w-full gap-3 px-6 py-3 text-gray-900 duration-300 delay-150 border border-red-900 rounded-full hover:text-white hover:bg-red-900 w-82 eas-in-out whitespace-nowrap"
                                             to={Resume}
-                                            download="Gilang Alfi Syahri Ramadhan - Portofolio Of UI/UX Designer & Graphic Designer"
+                                            download="Gilang Alfi Syahri Ramadhan - Portofolio Of UI/UX Designer"
                                             target="_blank"
                                             rel="noreferrer"
                                         >
@@ -290,7 +291,7 @@ const AboutArticleitems = () => {
                                         <Link
                                             className="flex justify-center w-full gap-3 px-6 py-3 text-gray-900 duration-300 delay-150 border border-blue-900 rounded-full hover:text-white hover:bg-blue-600 w-82 eas-in-out whitespace-nowrap"
                                             to={Portofolio}
-                                            download="Gilang Alfi Syahri Ramadhan - Portofolio Of UI/UX Designer & Graphic Designer"
+                                            download="Gilang Alfi Syahri Ramadhan - Portofolio Of UI/UX Designer"
                                             target="_blank"
                                             rel="noreferrer"
                                         >
