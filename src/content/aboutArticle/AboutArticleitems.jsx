@@ -3,9 +3,8 @@ import React, { useEffect, useRef } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import styled from "styled-components";
 import "../../styles/aboutStyles.scss";
-import CVPortofolio from "../../assets/CV/Gilang_Alfi_Syahri_Ramadhan-CV.pdf";
+import CVPortofolio from "../../assets/CV/Gilang_Alfi_Syahri_Ramadhan_CV_2026_new.pdf";
 import Resume from "../../assets/Resume/Gilang_Alfi_Syahri_Ramadhan-Resume.pdf";
-// import Portofolio from "../../assets/Portofolio/Gilang_Alfi_Syahri_Ramadhan-Portofolios.pdf";
 import Portofolio from "../../assets/Portofolio/Gilang_Ramadhan_Portofolio_2026_new.pdf";
 import { Link } from "react-router-dom";
 import {
